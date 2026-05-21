@@ -1,1 +1,545 @@
-<h1>Сайт работает!</h1>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechReview — обзоры техники и гаджетов</title>
+  <meta name="description" content="TechReview — обзоры смартфонов, ноутбуков, аудио и умного дома. Сравнения, рейтинги и лучшие гаджеты 2026 года." />
+  <meta name="keywords" content="обзоры техники, лучшие смартфоны, ноутбуки, гаджеты, умный дом, наушники" />
+
+  <meta property="og:title" content="TechReview — обзоры техники и гаджетов" />
+  <meta property="og:description" content="Сравнения, рейтинги и обзоры техники. Лучшие гаджеты 2026 года." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Inter, Arial, sans-serif;
+      background: #ffffff;
+      color: #111111;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #ececec;
+      z-index: 100;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    nav {
+      display: flex;
+      gap: 24px;
+    }
+
+    nav a {
+      color: #555;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
+
+    .hero {
+      padding: 80px 0 60px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      line-height: 1.1;
+      margin-bottom: 24px;
+      max-width: 850px;
+      letter-spacing: -2px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #666;
+      max-width: 720px;
+      margin-bottom: 36px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 24px;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .btn-primary {
+      background: #111;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #000;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      border: 1px solid #ddd;
+      color: #111;
+    }
+
+    .btn-secondary:hover {
+      background: #f7f7f7;
+    }
+
+    .section {
+      padding: 70px 0;
+    }
+
+    .section-title {
+      font-size: 36px;
+      margin-bottom: 40px;
+      letter-spacing: -1px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+    }
+
+    .card {
+      border: 1px solid #ececec;
+      border-radius: 22px;
+      overflow: hidden;
+      transition: 0.25s;
+      background: white;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    }
+
+    .card-image {
+      height: 220px;
+      background: linear-gradient(135deg, #f3f3f3, #e8e8e8);
+    }
+
+    .card-content {
+      padding: 24px;
+    }
+
+    .card-category {
+      display: inline-block;
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .card h3 {
+      font-size: 24px;
+      margin-bottom: 14px;
+      line-height: 1.3;
+    }
+
+    .card p {
+      color: #666;
+      margin-bottom: 18px;
+    }
+
+    .card-link {
+      font-weight: 700;
+      color: #111;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .category-box {
+      padding: 30px;
+      border-radius: 22px;
+      background: #fafafa;
+      border: 1px solid #ececec;
+      transition: 0.2s;
+    }
+
+    .category-box:hover {
+      background: #f5f5f5;
+      transform: translateY(-4px);
+    }
+
+    .category-box h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .category-box p {
+      color: #666;
+    }
+
+    .newsletter {
+      padding: 70px 40px;
+      background: #111;
+      color: white;
+      border-radius: 30px;
+      text-align: center;
+    }
+
+    .newsletter h2 {
+      font-size: 42px;
+      margin-bottom: 16px;
+    }
+
+    .newsletter p {
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+
+    .newsletter input {
+      width: 100%;
+      max-width: 500px;
+      padding: 16px;
+      border-radius: 14px;
+      border: none;
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
+
+    footer {
+      padding: 50px 0;
+      border-top: 1px solid #ececec;
+      margin-top: 70px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+
+    .footer-column h4 {
+      margin-bottom: 16px;
+      font-size: 18px;
+    }
+
+    .footer-column a {
+      display: block;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .footer-column a:hover {
+      color: #111;
+    }
+
+    .copyright {
+      margin-top: 40px;
+      color: #777;
+      font-size: 14px;
+      border-top: 1px solid #ececec;
+      padding-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .section-title {
+        font-size: 30px;
+      }
+
+      .newsletter h2 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container header-inner">
+    <div class="logo">TechReview</div>
+
+    <nav>
+      <a href="#reviews">Обзоры</a>
+      <a href="#categories">Категории</a>
+      <a href="#guides">Гайды</a>
+      <a href="#comparisons">Сравнения</a>
+      <a href="#about">О сайте</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Честные обзоры техники и гаджетов без рекламной воды</h1>
+
+    <p>
+      Смартфоны, ноутбуки, умный дом, аудио и лучшие гаджеты 2026 года.
+      Сравниваем технику и помогаем выбрать лучшее по цене и качеству.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#reviews" class="btn btn-primary">Читать обзоры</a>
+      <a href="#categories" class="btn btn-secondary">Категории</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="categories">
+  <div class="container">
+    <h2 class="section-title">Популярные категории</h2>
+
+    <div class="categories">
+      <div class="category-box">
+        <h3>Смартфоны</h3>
+        <p>Топы, сравнения и обзоры Android и iPhone.</p>
+      </div>
+
+      <div class="category-box">
+        <h3>Ноутбуки</h3>
+        <p>Работа, gaming, creator и бизнес-модели.</p>
+      </div>
+
+      <div class="category-box">
+        <h3>Умный дом</h3>
+        <p>Роботы-пылесосы, Zigbee, камеры и автоматизация.</p>
+      </div>
+
+      <div class="category-box">
+        <h3>Аудио</h3>
+        <p>TWS-наушники, колонки и premium звук.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="reviews">
+  <div class="container">
+    <h2 class="section-title">Последние обзоры</h2>
+
+    <div class="grid">
+
+      <article class="card">
+        <div class="card-image"></div>
+
+        <div class="card-content">
+          <span class="card-category">Смартфоны</span>
+
+          <h3>Лучшие смартфоны до 30000 рублей в 2026 году</h3>
+
+          <p>
+            Сравнили камеры, батареи, производительность и выбрали лучшие модели.
+          </p>
+
+          <a href="#" class="card-link">Читать обзор →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-image"></div>
+
+        <div class="card-content">
+          <span class="card-category">Ноутбуки</span>
+
+          <h3>Лучшие ноутбуки для работы и учебы</h3>
+
+          <p>
+            Подборка ноутбуков для офиса, программирования и повседневной работы.
+          </p>
+
+          <a href="#" class="card-link">Читать обзор →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-image"></div>
+
+        <div class="card-content">
+          <span class="card-category">Умный дом</span>
+
+          <h3>Топ роботов-пылесосов для квартиры</h3>
+
+          <p>
+            Какие модели реально экономят время и хорошо убирают.
+          </p>
+
+          <a href="#" class="card-link">Читать обзор →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-image"></div>
+
+        <div class="card-content">
+          <span class="card-category">Аудио</span>
+
+          <h3>Лучшие TWS-наушники с шумоподавлением</h3>
+
+          <p>
+            Сравнили звук, автономность и комфорт популярных моделей.
+          </p>
+
+          <a href="#" class="card-link">Читать обзор →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="comparisons">
+  <div class="container">
+    <h2 class="section-title">Сравнения</h2>
+
+    <div class="grid">
+
+      <article class="card">
+        <div class="card-image"></div>
+
+        <div class="card-content">
+          <span class="card-category">Сравнение</span>
+
+          <h3>iPhone vs Samsung — что выбрать в 2026?</h3>
+
+          <p>
+            Экосистема, камеры, батарея и производительность — разбираем все плюсы и минусы.
+          </p>
+
+          <a href="#" class="card-link">Читать сравнение →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-image"></div>
+
+        <div class="card-content">
+          <span class="card-category">Ноутбуки</span>
+
+          <h3>MacBook или Windows — что лучше для работы?</h3>
+
+          <p>
+            Сравнение автономности, производительности и программ.
+          </p>
+
+          <a href="#" class="card-link">Читать сравнение →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="guides">
+  <div class="container">
+    <div class="newsletter">
+      <h2>Получайте новые обзоры первыми</h2>
+
+      <p>
+        Подписывайтесь на обновления TechReview и не пропускайте лучшие гаджеты.
+      </p>
+
+      <input type="email" placeholder="Ваш email" />
+
+      <br>
+
+      <a href="#" class="btn btn-primary">Подписаться</a>
+    </div>
+  </div>
+</section>
+
+<footer id="about">
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div class="footer-column">
+        <h4>TechReview</h4>
+
+        <p>
+          Независимые обзоры техники и гаджетов.
+          Помогаем выбрать лучшие устройства.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Категории</h4>
+
+        <a href="#">Смартфоны</a>
+        <a href="#">Ноутбуки</a>
+        <a href="#">Умный дом</a>
+        <a href="#">Аудио</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Полезное</h4>
+
+        <a href="#">Лучшие смартфоны</a>
+        <a href="#">Лучшие ноутбуки</a>
+        <a href="#">Как выбрать телевизор</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Информация</h4>
+
+        <a href="#">О сайте</a>
+        <a href="#">Контакты</a>
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 TechReview. Сайт может содержать партнерские ссылки.
+      При покупке через них сайт получает комиссию.
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
