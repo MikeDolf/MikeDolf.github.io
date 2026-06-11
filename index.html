@@ -3,345 +3,290 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="Tu38XET2r-6SOtMHPRbWSF2cZOgfrtN8_Hnw5PSv4Xo" />
-<title>Все обзоры техники и гаджетов | TechReview</title>
-<meta name="description" content="Все обзоры смартфонов, ноутбуков, наушников и бытовой техники. Честные тесты с оценками редакции и лучшими ценами на Яндекс.Маркете.">
+<title>TechReview — честные обзоры техники и гаджетов 2026</title>
+<meta name="description" content="Обзоры смартфонов, ноутбуков, наушников и бытовой техники. Реальные тесты, оценки редакции и лучшие цены на Яндекс.Маркете.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://mikedolf.github.io/obzory/">
-<meta property="og:title" content="Все обзоры техники | TechReview">
-<meta property="og:description" content="Честные обзоры смартфонов, ноутбуков, наушников и бытовой техники.">
+<link rel="canonical" href="https://mikedolf.github.io/">
+<meta property="og:title" content="TechReview — честные обзоры техники и гаджетов 2026">
+<meta property="og:description" content="Обзоры смартфонов, ноутбуков, наушников и бытовой техники. Реальные тесты, оценки редакции и лучшие цены на Яндекс.Маркете.">
 <meta property="og:type" content="website">
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "Все обзоры техники",
-  "description": "Честные обзоры техники и гаджетов от редакции TechReview",
-  "url": "https://mikedolf.github.io/obzory/",
-  "publisher": { "@type": "Organization", "name": "TechReview" }
-}
+{"@context":"https://schema.org","@type":"WebSite","name":"TechReview","url":"https://mikedolf.github.io/","description":"Честные обзоры техники и гаджетов","publisher":{"@type":"Organization","name":"TechReview"}}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700;900&family=Spectral:wght@400;600&display=swap" rel="stylesheet">
 <style>
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-:root {
-  --white: #ffffff; --bg: #f7f7f5; --bg2: #f0f0ed;
-  --border: #e8e8e4; --border2: #d4d4ce;
-  --text: #1a1a18; --text2: #5c5c58; --text3: #9c9c96;
-  --accent: #2563eb; --accent-light: #eff4ff;
-  --green: #16a34a; --green-light: #f0fdf4;
-  --amber: #d97706; --amber-light: #fffbeb;
-  --red: #dc2626; --red-light: #fef2f2;
-  --radius: 8px; --radius-lg: 12px;
-  --shadow: 0 1px 3px rgba(0,0,0,0.08);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
-}
-body { font-family: 'Geologica', sans-serif; background: var(--white); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
-a { color: inherit; text-decoration: none; }
-.nav { position: sticky; top: 0; z-index: 200; background: rgba(255,255,255,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
-.nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; height: 56px; }
-.logo { font-weight: 900; font-size: 18px; letter-spacing: -0.5px; color: var(--text); margin-right: 32px; flex-shrink: 0; }
-.logo span { color: var(--accent); }
-.nav-cats { display: flex; flex: 1; overflow-x: auto; scrollbar-width: none; }
-.nav-cats::-webkit-scrollbar { display: none; }
-.nav-cats a { font-size: 14px; font-weight: 500; color: var(--text2); padding: 0 14px; height: 56px; display: flex; align-items: center; border-bottom: 2px solid transparent; white-space: nowrap; transition: all 0.15s; }
-.nav-cats a:hover { color: var(--text); border-bottom-color: var(--border2); }
-.nav-cats a.active { color: var(--accent); border-bottom-color: var(--accent); }
-.nav-right { margin-left: auto; flex-shrink: 0; }
-.nav-search { display: flex; align-items: center; gap: 8px; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 6px 12px; font-size: 13px; color: var(--text3); cursor: pointer; }
-.nav-search svg { width: 14px; height: 14px; }
-.burger { display: none; background: none; border: none; cursor: pointer; padding: 4px; margin-left: 8px; }
-.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-.breadcrumb { padding: 20px 0 0; display: flex; gap: 6px; font-size: 13px; color: var(--text3); align-items: center; flex-wrap: wrap; }
-.breadcrumb a { color: var(--text3); transition: color 0.15s; }
-.breadcrumb a:hover { color: var(--accent); }
-.page-grid { display: grid; grid-template-columns: 1fr 300px; gap: 48px; padding: 32px 0 80px; }
-.page-header { margin-bottom: 32px; padding-bottom: 24px; border-bottom: 2px solid var(--text); }
-.page-header h1 { font-family: 'Spectral', serif; font-size: 36px; font-weight: 600; letter-spacing: -0.5px; margin-bottom: 8px; }
-.page-header p { font-size: 16px; color: var(--text2); }
-.page-header-meta { display: flex; align-items: center; gap: 16px; margin-top: 16px; }
-.count-badge { font-size: 13px; font-weight: 600; color: var(--text3); background: var(--bg); padding: 4px 12px; border-radius: 100px; border: 1px solid var(--border); }
-.filter-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
-.filter-btn { font-size: 13px; font-weight: 500; padding: 7px 16px; border-radius: 100px; border: 1px solid var(--border); background: var(--white); color: var(--text2); cursor: pointer; transition: all 0.15s; font-family: 'Geologica', sans-serif; }
-.filter-btn:hover { border-color: var(--accent); color: var(--accent); }
-.filter-btn.active { background: var(--accent); color: white; border-color: var(--accent); }
-.featured-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 32px; }
-.featured-card { border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; background: var(--white); transition: box-shadow 0.2s, transform 0.2s; }
-.featured-card:hover { box-shadow: var(--shadow-md); transform: translateY(-1px); }
-.featured-thumb { height: 180px; background: var(--bg); display: flex; align-items: center; justify-content: center; position: relative; }
-.featured-body { padding: 20px; }
-.featured-body .badge-row { margin-bottom: 10px; display: flex; gap: 6px; }
-.featured-body h2 { font-size: 17px; font-weight: 700; line-height: 1.3; color: var(--text); margin-bottom: 8px; }
-.featured-body p { font-size: 13px; color: var(--text2); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.featured-foot { display: flex; align-items: center; justify-content: space-between; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
-.score-pill { font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 100px; background: var(--green-light); color: var(--green); }
-.section-label { font-size: 12px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: var(--text3); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
-.article-list { display: flex; flex-direction: column; }
-.article-item { display: grid; grid-template-columns: 120px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--border); transition: opacity 0.15s; }
-.article-item:hover { opacity: 0.78; }
-.article-item:last-child { border-bottom: none; }
-.article-thumb { width: 120px; height: 80px; border-radius: var(--radius); background: var(--bg); display: flex; align-items: center; justify-content: center; flex-shrink: 0; overflow: hidden; position: relative; }
-.article-thumb .score-overlay { position: absolute; bottom: 6px; right: 6px; background: rgba(0,0,0,0.7); color: white; font-size: 11px; font-weight: 700; padding: 2px 7px; border-radius: 4px; }
-.article-info { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
-.article-info .badge-row { display: flex; gap: 6px; align-items: center; }
-.article-info h3 { font-size: 15px; font-weight: 600; line-height: 1.35; color: var(--text); }
-.article-info p { font-size: 13px; color: var(--text2); line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.article-foot { display: flex; align-items: center; gap: 10px; margin-top: 2px; }
-.article-date, .article-views, .article-read { font-size: 12px; color: var(--text3); }
-.category-badge { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: 0.3px; padding: 3px 9px; border-radius: 4px; background: var(--accent-light); color: var(--accent); }
-.badge-green { background: var(--green-light); color: var(--green); }
-.badge-amber { background: var(--amber-light); color: var(--amber); }
-.badge-gray { background: var(--bg2); color: var(--text2); }
-.badge-purple { background: #f5f0ff; color: #7c3aed; }
-.load-more-wrap { text-align: center; padding: 32px 0; }
-.load-more-btn { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--accent); border: 1.5px solid var(--accent); padding: 10px 28px; border-radius: 100px; cursor: pointer; background: none; font-family: 'Geologica'; transition: all 0.15s; }
-.load-more-btn:hover { background: var(--accent); color: white; }
-.sidebar { display: flex; flex-direction: column; gap: 28px; padding-top: 32px; }
-.sidebar-title { font-size: 12px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: var(--text3); margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
-.best-list { display: flex; flex-direction: column; }
-.best-item { display: flex; align-items: flex-start; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--border); transition: opacity 0.15s; }
-.best-item:last-child { border-bottom: none; }
-.best-item:hover { opacity: 0.75; }
-.best-num { font-size: 16px; font-weight: 900; color: var(--border2); min-width: 20px; }
-.best-num.n1 { color: #c8960c; } .best-num.n2 { color: #8a9ba8; } .best-num.n3 { color: #a0522d; }
-.best-body { display: flex; flex-direction: column; gap: 2px; }
-.best-tag { font-size: 11px; font-weight: 600; color: var(--accent); text-transform: uppercase; }
-.best-title { font-size: 13px; font-weight: 600; color: var(--text); line-height: 1.35; }
-.best-meta { font-size: 11px; color: var(--text3); }
-.tags-cloud { display: flex; flex-wrap: wrap; gap: 7px; }
-.tag-chip { font-size: 13px; color: var(--text2); background: var(--bg); border: 1px solid var(--border); padding: 5px 12px; border-radius: 100px; transition: all 0.15s; }
-.tag-chip:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-light); }
-.newsletter-block { background: var(--accent); color: white; border-radius: var(--radius-lg); padding: 20px; }
-.newsletter-block h3 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
-.newsletter-block p { font-size: 13px; opacity: 0.85; margin-bottom: 14px; }
-.newsletter-form { display: flex; gap: 8px; }
-.newsletter-form input { flex: 1; padding: 9px 12px; border: none; border-radius: var(--radius); font-size: 13px; font-family: 'Geologica'; outline: none; min-width: 0; }
-.newsletter-form button { background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3); border-radius: var(--radius); padding: 9px 14px; font-size: 13px; font-weight: 600; cursor: pointer; font-family: 'Geologica'; white-space: nowrap; transition: background 0.15s; }
-.newsletter-form button:hover { background: rgba(255,255,255,0.35); }
-footer { border-top: 1px solid var(--border); padding: 40px 0 28px; background: var(--bg); }
-.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 28px; }
-.footer-brand .logo { display: block; font-size: 18px; margin-bottom: 10px; }
-.footer-brand p { font-size: 13px; color: var(--text2); line-height: 1.7; max-width: 240px; }
-.footer-col h4 { font-size: 11px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: var(--text3); margin-bottom: 12px; }
-.footer-col a { display: block; font-size: 14px; color: var(--text2); margin-bottom: 8px; transition: color 0.15s; }
-.footer-col a:hover { color: var(--accent); }
-.footer-bottom { padding-top: 20px; border-top: 1px solid var(--border); display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; }
-.footer-bottom p { font-size: 12px; color: var(--text3); }
-.footer-disclaimer { font-size: 12px; color: var(--text3); max-width: 500px; line-height: 1.6; }
-@media (max-width: 900px) { .page-grid { grid-template-columns: 1fr; } .sidebar { display: none; } .footer-grid { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 640px) { .featured-row { grid-template-columns: 1fr; } .article-thumb { width: 90px; height: 62px; } .nav-cats { display: none; } .burger { display: flex; } .footer-grid { grid-template-columns: 1fr; } }
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+:root { --white:#ffffff; --bg:#f7f7f5; --bg2:#f0f0ed; --border:#e8e8e4; --border2:#d4d4ce;
+--text:#1a1a18; --text2:#5c5c58; --text3:#9c9c96; --accent:#2563eb; --accent-light:#eff4ff;
+--green:#16a34a; --green-light:#f0fdf4; --amber:#d97706; --amber-light:#fffbeb;
+--red:#dc2626; --red-light:#fef2f2; --radius:8px; --radius-lg:12px;
+--shadow:0 1px 3px rgba(0,0,0,0.08); --shadow-md:0 4px 12px rgba(0,0,0,0.08); }
+body { font-family:'Geologica',sans-serif; background:var(--white); color:var(--text); line-height:1.6; -webkit-font-smoothing:antialiased; }
+a { color:inherit; text-decoration:none; }
+.nav { position:sticky; top:0; z-index:200; background:rgba(255,255,255,0.95); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); }
+.nav-inner { max-width:1200px; margin:0 auto; padding:0 24px; display:flex; align-items:center; height:56px; }
+.logo { font-weight:900; font-size:18px; letter-spacing:-0.5px; color:var(--text); margin-right:32px; flex-shrink:0; }
+.logo span { color:var(--accent); }
+.nav-cats { display:flex; flex:1; overflow-x:auto; scrollbar-width:none; }
+.nav-cats::-webkit-scrollbar { display:none; }
+.nav-cats a { font-size:14px; font-weight:500; color:var(--text2); padding:0 14px; height:56px; display:flex; align-items:center; border-bottom:2px solid transparent; white-space:nowrap; transition:all 0.15s; }
+.nav-cats a:hover { color:var(--text); border-bottom-color:var(--border2); }
+.nav-cats a.active { color:var(--accent); border-bottom-color:var(--accent); }
+.burger { display:none; background:none; border:none; cursor:pointer; padding:4px; margin-left:auto; }
+.container { max-width:1200px; margin:0 auto; padding:0 24px; }
+.container-narrow { max-width:760px; margin:0 auto; padding:0 24px; }
+.breadcrumb { padding:20px 0 0; display:flex; gap:6px; font-size:13px; color:var(--text3); align-items:center; flex-wrap:wrap; }
+.breadcrumb a:hover { color:var(--accent); }
+.category-badge { display:inline-block; font-size:11px; font-weight:600; letter-spacing:0.3px; padding:3px 9px; border-radius:4px; background:var(--accent-light); color:var(--accent); }
+.badge-green { background:var(--green-light); color:var(--green); }
+.badge-amber { background:var(--amber-light); color:var(--amber); }
+.badge-gray { background:var(--bg2); color:var(--text2); }
+.badge-purple { background:#f5f0ff; color:#7c3aed; }
+.badge-row { display:flex; gap:6px; align-items:center; }
+/* ARTICLE */
+.article-header { padding:28px 0 24px; border-bottom:1px solid var(--border); margin-bottom:28px; }
+.article-header .badge-row { margin-bottom:14px; }
+.article-header h1 { font-family:'Spectral',serif; font-size:34px; font-weight:600; line-height:1.25; letter-spacing:-0.5px; margin-bottom:12px; }
+.article-lead { font-size:17px; color:var(--text2); line-height:1.6; }
+.article-meta { display:flex; align-items:center; gap:8px; margin-top:18px; font-size:13px; color:var(--text3); flex-wrap:wrap; }
+.verdict-card { background:var(--bg); border:1px solid var(--border); border-radius:var(--radius-lg); padding:22px; margin-bottom:32px; }
+.verdict-top { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:14px; }
+.verdict-label { font-size:12px; font-weight:700; letter-spacing:0.8px; text-transform:uppercase; color:var(--text3); }
+.score-big { font-size:28px; font-weight:900; color:var(--green); }
+.verdict-card p { font-size:14px; color:var(--text2); line-height:1.6; }
+.article-body { font-size:16px; line-height:1.75; color:var(--text); }
+.article-body h2 { font-family:'Spectral',serif; font-size:25px; font-weight:600; margin:40px 0 14px; letter-spacing:-0.3px; }
+.article-body h3 { font-size:18px; font-weight:700; margin:28px 0 10px; }
+.article-body p { margin-bottom:16px; }
+.article-body ul, .article-body ol { margin:0 0 16px 22px; }
+.article-body li { margin-bottom:6px; }
+.pros-cons { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:24px 0; }
+.pc-block { border-radius:var(--radius-lg); padding:18px; font-size:14px; }
+.pc-block.pros { background:var(--green-light); border:1px solid #d1f0db; }
+.pc-block.cons { background:var(--red-light); border:1px solid #f5d5d5; }
+.pc-block h3 { font-size:14px; font-weight:700; margin:0 0 10px; }
+.pc-block.pros h3 { color:var(--green); }
+.pc-block.cons h3 { color:var(--red); }
+.pc-block ul { margin:0 0 0 18px; }
+.pc-block li { margin-bottom:5px; line-height:1.5; }
+.price-box { background:var(--amber-light); border:1px solid #f0e0bd; border-radius:var(--radius-lg); padding:20px 22px; margin:28px 0; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+.price-box .price-info { display:flex; flex-direction:column; gap:3px; }
+.price-box .price-label { font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:0.5px; color:var(--amber); }
+.price-box .price-value { font-size:24px; font-weight:900; }
+.price-box .price-note { font-size:12px; color:var(--text3); }
+.btn-market { display:inline-flex; align-items:center; gap:8px; background:var(--amber); color:#fff; font-weight:700; font-size:14px; padding:12px 24px; border-radius:100px; transition:opacity 0.15s; white-space:nowrap; }
+.btn-market:hover { opacity:0.88; }
+.specs-table { width:100%; border-collapse:collapse; margin:20px 0 28px; font-size:14px; }
+.specs-table td { padding:10px 14px; border-bottom:1px solid var(--border); }
+.specs-table td:first-child { color:var(--text2); width:42%; }
+.specs-table tr:nth-child(odd) td { background:var(--bg); }
+.author-box { display:flex; align-items:center; gap:16px; background:var(--accent-light); border:1px solid #d8e4fa; border-radius:var(--radius-lg); padding:20px 22px; margin:40px 0 28px; flex-wrap:wrap; }
+.author-avatar { width:48px; height:48px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:18px; flex-shrink:0; }
+.author-info { flex:1; min-width:200px; }
+.author-info .a-name { font-weight:700; font-size:15px; }
+.author-info .a-desc { font-size:13px; color:var(--text2); }
+.btn-taplink { display:inline-flex; align-items:center; gap:7px; background:var(--accent); color:#fff; font-weight:600; font-size:13px; padding:10px 20px; border-radius:100px; transition:opacity 0.15s; white-space:nowrap; }
+.btn-taplink:hover { opacity:0.88; }
+.related { margin:36px 0 0; padding-top:24px; border-top:2px solid var(--text); }
+.related h2 { font-size:12px; font-weight:700; letter-spacing:0.8px; text-transform:uppercase; color:var(--text3); margin-bottom:16px; }
+.related a { display:block; padding:12px 0; border-bottom:1px solid var(--border); font-size:15px; font-weight:600; transition:color 0.15s; }
+.related a:hover { color:var(--accent); }
+.related a:last-child { border-bottom:none; }
+/* TOP LIST */
+.top-item { border:1px solid var(--border); border-radius:var(--radius-lg); padding:22px; margin-bottom:18px; }
+.top-item .ti-head { display:flex; align-items:flex-start; gap:14px; margin-bottom:10px; }
+.top-num { font-size:26px; font-weight:900; color:var(--border2); line-height:1.1; min-width:34px; }
+.top-num.n1 { color:#c8960c; } .top-num.n2 { color:#8a9ba8; } .top-num.n3 { color:#a0522d; }
+.ti-title h3 { font-size:18px; font-weight:700; }
+.ti-tag { font-size:11px; font-weight:600; color:var(--accent); text-transform:uppercase; letter-spacing:0.3px; }
+.top-item p { font-size:14px; color:var(--text2); line-height:1.6; margin-bottom:14px; }
+.ti-foot { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.ti-price { font-size:18px; font-weight:900; }
+/* LISTING */
+.page-header { margin:32px 0; padding-bottom:24px; border-bottom:2px solid var(--text); }
+.page-header h1 { font-family:'Spectral',serif; font-size:36px; font-weight:600; letter-spacing:-0.5px; margin-bottom:8px; }
+.page-header p { font-size:16px; color:var(--text2); }
+.article-list { display:flex; flex-direction:column; margin-bottom:48px; }
+.article-item { display:grid; grid-template-columns:120px 1fr; gap:16px; padding:18px 0; border-bottom:1px solid var(--border); transition:opacity 0.15s; }
+.article-item:hover { opacity:0.78; }
+.article-thumb { width:120px; height:80px; border-radius:var(--radius); display:flex; align-items:center; justify-content:center; flex-shrink:0; overflow:hidden; position:relative; }
+.article-thumb .score-overlay { position:absolute; bottom:6px; right:6px; background:rgba(0,0,0,0.7); color:#fff; font-size:11px; font-weight:700; padding:2px 7px; border-radius:4px; }
+.article-info { display:flex; flex-direction:column; gap:5px; min-width:0; }
+.article-info h3 { font-size:15px; font-weight:600; line-height:1.35; }
+.article-info p { font-size:13px; color:var(--text2); line-height:1.45; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+.article-foot { display:flex; align-items:center; gap:10px; margin-top:2px; font-size:12px; color:var(--text3); }
+/* HOME */
+.hero { padding:48px 0 8px; }
+.hero h1 { font-family:'Spectral',serif; font-size:42px; font-weight:600; letter-spacing:-1px; line-height:1.15; margin-bottom:14px; max-width:720px; }
+.hero p { font-size:17px; color:var(--text2); max-width:560px; }
+.featured-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:32px 0 40px; }
+.featured-card { border:1px solid var(--border); border-radius:var(--radius-lg); overflow:hidden; background:var(--white); transition:box-shadow 0.2s, transform 0.2s; }
+.featured-card:hover { box-shadow:var(--shadow-md); transform:translateY(-1px); }
+.featured-thumb { height:160px; display:flex; align-items:center; justify-content:center; }
+.featured-body { padding:20px; }
+.featured-body .badge-row { margin-bottom:10px; }
+.featured-body h2 { font-size:17px; font-weight:700; line-height:1.3; margin-bottom:8px; }
+.featured-body p { font-size:13px; color:var(--text2); line-height:1.5; }
+.featured-foot { display:flex; align-items:center; justify-content:space-between; margin-top:12px; padding-top:12px; border-top:1px solid var(--border); font-size:12px; color:var(--text3); }
+.score-pill { font-size:12px; font-weight:700; padding:3px 10px; border-radius:100px; background:var(--green-light); color:var(--green); }
+.section-label { font-size:12px; font-weight:700; letter-spacing:0.8px; text-transform:uppercase; color:var(--text3); margin-bottom:16px; padding-bottom:10px; border-bottom:1px solid var(--border); }
+.cats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin:0 0 56px; }
+.cat-card { border:1px solid var(--border); border-radius:var(--radius-lg); padding:18px; transition:all 0.15s; }
+.cat-card:hover { border-color:var(--accent); background:var(--accent-light); }
+.cat-card h3 { font-size:15px; font-weight:700; margin-bottom:4px; }
+.cat-card p { font-size:12px; color:var(--text3); line-height:1.45; }
+/* STATIC PAGES */
+.static-body { font-size:16px; line-height:1.75; padding-bottom:56px; max-width:680px; }
+.static-body h2 { font-family:'Spectral',serif; font-size:24px; font-weight:600; margin:32px 0 12px; }
+.static-body p { margin-bottom:16px; color:var(--text); }
+.static-body ul { margin:0 0 16px 22px; }
+/* FOOTER */
+footer { border-top:1px solid var(--border); padding:40px 0 28px; background:var(--bg); margin-top:56px; }
+.footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:40px; margin-bottom:28px; }
+.footer-brand p { font-size:13px; color:var(--text2); line-height:1.7; max-width:240px; margin-top:10px; }
+.footer-col h4 { font-size:11px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; color:var(--text3); margin-bottom:12px; }
+.footer-col a { display:block; font-size:14px; color:var(--text2); margin-bottom:8px; transition:color 0.15s; }
+.footer-col a:hover { color:var(--accent); }
+.footer-bottom { padding-top:20px; border-top:1px solid var(--border); display:flex; align-items:flex-start; justify-content:space-between; gap:24px; flex-wrap:wrap; }
+.footer-bottom p { font-size:12px; color:var(--text3); }
+.footer-disclaimer { max-width:500px; line-height:1.6; }
+@media (max-width:900px) { .featured-row, .pros-cons { grid-template-columns:1fr; } .cats-grid { grid-template-columns:1fr 1fr; } .footer-grid { grid-template-columns:1fr 1fr; } }
+@media (max-width:640px) { .nav-cats { display:none; } .burger { display:flex; } .article-header h1 { font-size:26px; } .hero h1 { font-size:30px; } .article-thumb { width:90px; height:62px; } .footer-grid { grid-template-columns:1fr; } }
 </style>
 </head>
 <body>
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="../" class="logo">Tech<span>Review</span></a>
-    <div class="nav-cats">
-      <a href="../smartfony/">Смартфоны</a>
-      <a href="../noutbuki/">Ноутбуки</a>
-      <a href="../televizory/">Телевизоры</a>
-      <a href="../audio/">Аудио</a>
-      <a href="../bytovaya-tehnika/">Техника</a>
-      <a href="../gadzhety/">Гаджеты</a>
-      <a href="../top/">Топ товаров</a>
-      <a href="../sravnenie/">Сравнения</a>
-    </div>
-    <div class="nav-right">
-      <div class="nav-search">
-        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6.5" cy="6.5" r="5"/><path d="M10.5 10.5L14 14"/></svg>
-        Поиск
-      </div>
-      <button class="burger" onclick="toggleNav()">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5h14M3 10h14M3 15h14"/></svg>
-      </button>
-    </div>
-  </div>
-</nav>
+
+<nav class="nav"><div class="nav-inner">
+<a href="./" class="logo">Tech<span>Review</span></a>
+<div class="nav-cats"><a href="smartfony/">Смартфоны</a><a href="noutbuki/">Ноутбуки</a><a href="televizory/">Телевизоры</a><a href="audio/">Аудио</a><a href="bytovaya-tehnika/">Техника</a><a href="gadzhety/">Гаджеты</a><a href="top/">Топ товаров</a><a href="sravnenie/">Сравнения</a></div>
+<button class="burger" onclick="toggleNav()" aria-label="Меню"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5h14M3 10h14M3 15h14"/></svg></button>
+</div></nav>
+
 <div class="container">
-  <div class="breadcrumb">
-    <a href="../">Главная</a> › <span>Все обзоры</span>
-  </div>
-  <div class="page-grid">
-    <main role="main">
-      <div class="page-header">
-        <h1>Все обзоры</h1>
-        <p>Честные тесты техники и гаджетов — без рекламных бюджетов и предвзятости</p>
-        <div class="page-header-meta">
-          <span class="count-badge">500+ обзоров</span>
-          <span style="font-size:13px;color:var(--text3)">Обновляется каждую неделю</span>
-        </div>
-      </div>
-      <div class="filter-bar" role="group" aria-label="Фильтр по категориям">
-        <button class="filter-btn active" onclick="filterArticles('all', this)">Все</button>
-        <button class="filter-btn" onclick="filterArticles('smartfony', this)">Смартфоны</button>
-        <button class="filter-btn" onclick="filterArticles('noutbuki', this)">Ноутбуки</button>
-        <button class="filter-btn" onclick="filterArticles('audio', this)">Аудио</button>
-        <button class="filter-btn" onclick="filterArticles('tehnika', this)">Техника</button>
-        <button class="filter-btn" onclick="filterArticles('gadzhety', this)">Гаджеты</button>
-        <button class="filter-btn" onclick="filterArticles('televizory', this)">Телевизоры</button>
-      </div>
-      <div class="featured-row">
-        <a href="../obzory/samsung-galaxy-s25-ultra/" data-cat="smartfony">
-          <div class="featured-card">
-            <div class="featured-thumb" style="background:linear-gradient(135deg,#0f0f23,#1a1a3e);"></div>
-            <div class="featured-body">
-              <div class="badge-row"><span class="category-badge">Обзор</span><span class="category-badge badge-gray">Смартфоны</span></div>
-              <h2>Samsung Galaxy S25 Ultra: месяц использования — честный взгляд</h2>
-              <p>Флагман с S Pen, 200 МП камерой и ИИ. Стоит ли переплачивать за Ultra?</p>
-              <div class="featured-foot"><span style="font-size:12px;color:var(--text3)">20 мая 2026 · 9 мин</span><span class="score-pill">★ 9.1/10</span></div>
-            </div>
-          </div>
-        </a>
-        <a href="../obzory/iphone-16-pro-max/" data-cat="smartfony">
-          <div class="featured-card">
-            <div class="featured-thumb" style="background:linear-gradient(135deg,#f5f5f7,#e0e0ea);"></div>
-            <div class="featured-body">
-              <div class="badge-row"><span class="category-badge">Обзор</span><span class="category-badge badge-green">Топ выбор</span></div>
-              <h2>iPhone 16 Pro Max: зачем платить 110 000 рублей и есть ли смысл</h2>
-              <p>A18 Pro, камера 5x, рекордная автономность. Стоит ли апгрейд с 14 Pro?</p>
-              <div class="featured-foot"><span style="font-size:12px;color:var(--text3)">19 мая 2026 · 8 мин</span><span class="score-pill">★ 9.2/10</span></div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="section-label">Все материалы — от свежих к старым</div>
-      <div class="article-list" id="article-list">
-        <a href="../obzory/macbook-air-m3/" class="article-item" data-cat="noutbuki">
-          <div class="article-thumb" style="background:linear-gradient(135deg,#f0f0ee,#e4e4e0);"><div class="score-overlay">9.0</div></div>
-          <div class="article-info">
-            <div class="badge-row"><span class="category-badge badge-amber">Ноутбуки</span><span class="category-badge badge-gray">Apple</span></div>
-            <h3>MacBook Air 15" M3 — лучший ноутбук для работы или маркетинг Apple?</h3>
-            <p>18 часов автономности, тихая работа и дисплей Liquid Retina. Проверяем, насколько M3 быстрее M2.</p>
-            <div class="article-foot"><span class="article-date">17 мая 2026</span><span class="article-read">· 7 мин</span><span class="article-views">· 9 800 просм.</span></div>
-          </div>
-        </a>
-        <a href="../obzory/dyson-v15/" class="article-item" data-cat="tehnika">
-          <div class="article-thumb" style="background:linear-gradient(135deg,#f0f7f0,#e4f0e4);"><div class="score-overlay">8.7</div></div>
-          <div class="article-info">
-            <div class="badge-row"><span class="category-badge badge-green">Техника</span><span class="category-badge badge-gray">Dyson</span></div>
-            <h3>Dyson V15 Detect: оправдывает ли лазерный пылесос свою цену в 50 000 ₽</h3>
-            <p>Тестировали на коврах, паркете и длинном ворсе. Лазерная подсветка пыли — маркетинг или польза?</p>
-            <div class="article-foot"><span class="article-date">15 мая 2026</span><span class="article-read">· 6 мин</span><span class="article-views">· 7 200 просм.</span></div>
-          </div>
-        </a>
-        <a href="../obzory/airpods-pro-3/" class="article-item" data-cat="audio">
-          <div class="article-thumb" style="background:linear-gradient(135deg,#f5f0ff,#ede0ff);"><div class="score-overlay">8.9</div></div>
-          <div class="article-info">
-            <div class="badge-row"><span class="category-badge badge-purple">Аудио</span></div>
-            <h3>AirPods Pro 3 против Sony WH-1000XM6: какие наушники взять в 2026 году</h3>
-            <p>Сравниваем шумодав, звук, автономность и удобство. Переплачивать за Apple или Sony выгоднее?</p>
-            <div class="article-foot"><span class="article-date">12 мая 2026</span><span class="article-read">· 10 мин</span><span class="article-views">· 15 600 просм.</span></div>
-          </div>
-        </a>
-        <a href="../obzory/xiaomi-15-pro/" class="article-item" data-cat="smartfony">
-          <div class="article-thumb" style="background:linear-gradient(135deg,#fff5f0,#ffe8e0);"><div class="score-overlay">8.8</div></div>
-          <div class="article-info">
-            <div class="badge-row"><span class="category-badge">Смартфоны</span><span class="category-badge badge-gray">Xiaomi</span></div>
-            <h3>Xiaomi 15 Pro: флагман за 80 000 рублей, который бьёт iPhone по камере?</h3>
-            <p>Snapdragon 8 Elite, Leica-камера и зарядка 90W. Проверяем реальность хайпа вокруг нового Xiaomi.</p>
-            <div class="article-foot"><span class="article-date">10 мая 2026</span><span class="article-read">· 8 мин</span><span class="article-views">· 18 900 просм.</span></div>
-          </div>
-        </a>
-        <a href="../obzory/sony-wh1000xm6/" class="article-item" data-cat="audio">
-          <div class="article-thumb" style="background:linear-gradient(135deg,#f0f4ff,#e0e8ff);"><div class="score-overlay">9.1</div></div>
-          <div class="article-info">
-            <div class="badge-row"><span class="category-badge badge-purple">Аудио</span><span class="category-badge badge-gray">Sony</span></div>
-            <h3>Sony WH-1000XM6: лучший шумодав 2026 года или уже не то?</h3>
-            <p>Новое поколение флагманских наушников Sony. Улучшился ли звук и стоит ли апгрейд с XM5?</p>
-            <div class="article-foot"><span class="article-date">8 мая 2026</span><span class="article-read">· 7 мин</span><span class="article-views">· 11 400 просм.</span></div>
-          </div>
-        </a>
-        <a href="../obzory/samsung-qled-tv/" class="article-item" data-cat="televizory">
-          <div class="article-thumb" style="background:linear-gradient(135deg,#f0f0f0,#e4e4e4);"><div class="score-overlay">8.6</div></div>
-          <div class="article-info">
-            <div class="badge-row"><span class="category-badge badge-gray">Телевизоры</span><span class="category-badge badge-gray">Samsung</span></div>
-            <h3>Samsung Neo QLED 8K 2026: зачем платить 300 000 ₽ за телевизор</h3>
-            <p>Тестируем флагманский телевизор Samsung. Видна ли разница 8K в реальной жизни?</p>
-            <div class="article-foot"><span class="article-date">5 мая 2026</span><span class="article-read">· 9 мин</span><span class="article-views">· 6 800 просм.</span></div>
-          </div>
-        </a>
-        <a href="../obzory/apple-watch-ultra-2/" class="article-item" data-cat="gadzhety">
-          <div class="article-thumb" style="background:linear-gradient(135deg,#f5f5f0,#ebebdf);"><div class="score-overlay">9.0</div></div>
-          <div class="article-info">
-            <div class="badge-row"><span class="category-badge badge-gray">Гаджеты</span><span class="category-badge badge-gray">Apple</span></div>
-            <h3>Apple Watch Ultra 2: нужны ли вам часы за 80 000 ₽ если вы не альпинист</h3>
-            <p>Двойной дисплей, 60 часов автономности, спутниковая связь. Тест для обычного городского человека.</p>
-            <div class="article-foot"><span class="article-date">2 мая 2026</span><span class="article-read">· 8 мин</span><span class="article-views">· 8 900 просм.</span></div>
-          </div>
-        </a>
-      </div>
-      <div class="load-more-wrap">
-        <button class="load-more-btn" onclick="this.textContent='Загружаем...'">Загрузить ещё обзоры
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 3v10M3 8l5 5 5-5"/></svg>
-        </button>
-      </div>
-    </main>
-    <aside class="sidebar">
-      <div class="sidebar-block">
-        <div class="sidebar-title">Лучшее прямо сейчас</div>
-        <div class="best-list">
-          <a href="../obzory/iphone-16-pro-max/" class="best-item"><span class="best-num n1">1</span><div class="best-body"><div class="best-tag">Обзор · Смартфоны</div><div class="best-title">iPhone 16 Pro Max: зачем платить 110 000 ₽</div><div class="best-meta">8 мин · 12 400 просм.</div></div></a>
-          <a href="../sravnenie/iphone-vs-samsung/" class="best-item"><span class="best-num n2">2</span><div class="best-body"><div class="best-tag">Сравнение</div><div class="best-title">iPhone vs Galaxy S25 Ultra: итог</div><div class="best-meta">10 мин · 21 800 просм.</div></div></a>
-          <a href="../obzory/airpods-pro-3/" class="best-item"><span class="best-num n3">3</span><div class="best-body"><div class="best-tag">Сравнение · Аудио</div><div class="best-title">AirPods Pro 3 vs Sony XM6</div><div class="best-meta">10 мин · 15 600 просм.</div></div></a>
-          <a href="../obzory/xiaomi-15-pro/" class="best-item"><span class="best-num">4</span><div class="best-body"><div class="best-tag">Обзор · Смартфоны</div><div class="best-title">Xiaomi 15 Pro: флагман за 80 000 ₽</div><div class="best-meta">8 мин · 18 900 просм.</div></div></a>
-          <a href="../top/noutbuki-do-80000/" class="best-item"><span class="best-num">5</span><div class="best-body"><div class="best-tag">Рейтинг · Ноутбуки</div><div class="best-title">Топ-5 ноутбуков до 80 000 ₽</div><div class="best-meta">7 мин · 9 800 просм.</div></div></a>
-        </div>
-      </div>
-      <div class="newsletter-block">
-        <h3>Новые обзоры на почту</h3>
-        <p>Раз в неделю — лучшие материалы и скидки.</p>
-        <form class="newsletter-form" onsubmit="return false;"><input type="email" placeholder="ваш@email.ru" aria-label="Email"><button type="submit">OK</button></form>
-      </div>
-      <div class="sidebar-block">
-        <div class="sidebar-title">Темы</div>
-        <div class="tags-cloud">
-          <a href="../smartfony/" class="tag-chip">Смартфоны</a>
-          <a href="../apple/" class="tag-chip">Apple</a>
-          <a href="../samsung/" class="tag-chip">Samsung</a>
-          <a href="../noutbuki/" class="tag-chip">Ноутбуки</a>
-          <a href="../audio/" class="tag-chip">Аудио</a>
-          <a href="../gadzhety/" class="tag-chip">Гаджеты</a>
-          <a href="../do-10000/" class="tag-chip">до 10 000 ₽</a>
-          <a href="../flagmany/" class="tag-chip">Флагманы</a>
-        </div>
-      </div>
-    </aside>
-  </div>
+<div class="hero">
+<h1>Честные обзоры техники — без рекламных бюджетов</h1>
+<p>Тестируем смартфоны, ноутбуки, наушники и технику для дома в реальной жизни. Говорим, что покупать, а что — нет.</p>
 </div>
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="../" class="logo">Tech<span style="color:var(--accent)">Review</span></a>
-        <p>Независимые обзоры техники и гаджетов. Тестируем честно — без рекламных бюджетов.</p>
-      </div>
-      <div class="footer-col"><h4>Категории</h4><a href="../smartfony/">Смартфоны</a><a href="../noutbuki/">Ноутбуки</a><a href="../televizory/">Телевизоры</a><a href="../audio/">Аудио</a><a href="../bytovaya-tehnika/">Техника</a></div>
-      <div class="footer-col"><h4>Материалы</h4><a href="../obzory/">Все обзоры</a><a href="../top/">Рейтинги</a><a href="../gajdy/">Гайды</a><a href="../sravnenie/">Сравнения</a></div>
-      <div class="footer-col"><h4>О сайте</h4><a href="../o-nas/">О нас</a><a href="../kontakty/">Контакты</a><a href="../politika/">Конфиденциальность</a></div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2026 TechReview. Все права защищены.</p>
-      <p class="footer-disclaimer">Сайт участвует в партнёрской программе Яндекс.Маркета. При покупке через партнёрские ссылки мы получаем комиссию — для вас цена не меняется.</p>
-    </div>
-  </div>
-</footer>
+<div class="featured-row"><a href="obzory/iphone-16-pro-max/"><div class="featured-card">
+<div class="featured-thumb" style="background:linear-gradient(135deg,#eef2ff,#e0e7ff)"><svg width="34" height="56" viewBox="0 0 34 56" fill="none"><rect x="3" y="2" width="28" height="52" rx="6" fill="#1a1a2e" stroke="#3a3a5c" stroke-width="1.2"/><rect x="6" y="7" width="22" height="40" rx="4" fill="#0d0d1a"/><circle cx="17" cy="9.5" r="1.2" fill="#2a2a4a"/><rect x="12" y="50" width="10" height="2" rx="1" fill="#3a3a5c"/></svg></div>
+<div class="featured-body">
+<div class="badge-row"><span class="category-badge">Смартфоны</span></div>
+<h2>iPhone 16 Pro Max: зачем платить 110 000 рублей и есть ли смысл</h2><p>Самый дорогой серийный iPhone в России. A18 Pro, перископ 5x, рекордная автономность. Месяц носили его как осн…</p>
+<div class="featured-foot"><span>19 мая 2026 · 8 мин</span><span class="score-pill">★ 9.2/10</span></div>
+</div></div></a><a href="sravnenie/iphone-vs-samsung/"><div class="featured-card">
+<div class="featured-thumb" style="background:linear-gradient(135deg,#eef2ff,#e0e7ff)"><svg width="34" height="56" viewBox="0 0 34 56" fill="none"><rect x="3" y="2" width="28" height="52" rx="6" fill="#1a1a2e" stroke="#3a3a5c" stroke-width="1.2"/><rect x="6" y="7" width="22" height="40" rx="4" fill="#0d0d1a"/><circle cx="17" cy="9.5" r="1.2" fill="#2a2a4a"/><rect x="12" y="50" width="10" height="2" rx="1" fill="#3a3a5c"/></svg></div>
+<div class="featured-body">
+<div class="badge-row"><span class="category-badge">Сравнение</span></div>
+<h2>iPhone 16 Pro Max против Galaxy S25 Ultra: большое сравнение — кто победил</h2><p>Два главных флагмана 2026 года лицом к лицу: камера, экран, автономность, софт и цена. Месяц носили оба, тепер…</p>
+<div class="featured-foot"><span>22 мая 2026 · 10 мин</span><span class="score-pill" style="background:var(--accent-light);color:var(--accent)">Сравнение</span></div>
+</div></div></a></div>
+<div class="section-label">Свежие материалы</div>
+<div class="article-list"><a href="sravnenie/iphone-vs-samsung/" class="article-item">
+<div class="article-thumb" style="background:linear-gradient(135deg,#eef2ff,#e0e7ff);"><svg width="34" height="56" viewBox="0 0 34 56" fill="none"><rect x="3" y="2" width="28" height="52" rx="6" fill="#1a1a2e" stroke="#3a3a5c" stroke-width="1.2"/><rect x="6" y="7" width="22" height="40" rx="4" fill="#0d0d1a"/><circle cx="17" cy="9.5" r="1.2" fill="#2a2a4a"/><rect x="12" y="50" width="10" height="2" rx="1" fill="#3a3a5c"/></svg></div>
+<div class="article-info">
+<div class="badge-row"><span class="category-badge">Сравнение</span></div>
+<h3>iPhone 16 Pro Max против Galaxy S25 Ultra: большое сравнение — кто победил</h3>
+<p>Два главных флагмана 2026 года лицом к лицу: камера, экран, автономность, софт и цена. Месяц носили оба, теперь раздаём раунды и н…</p>
+<div class="article-foot"><span>22 мая 2026</span><span>· 10 мин</span><span>· 21 800 просм.</span></div>
+</div></a><a href="obzory/samsung-galaxy-s25-ultra/" class="article-item">
+<div class="article-thumb" style="background:linear-gradient(135deg,#eef2ff,#e0e7ff);"><svg width="34" height="56" viewBox="0 0 34 56" fill="none"><rect x="3" y="2" width="28" height="52" rx="6" fill="#1a1a2e" stroke="#3a3a5c" stroke-width="1.2"/><rect x="6" y="7" width="22" height="40" rx="4" fill="#0d0d1a"/><circle cx="17" cy="9.5" r="1.2" fill="#2a2a4a"/><rect x="12" y="50" width="10" height="2" rx="1" fill="#3a3a5c"/></svg><div class="score-overlay">9.1</div></div>
+<div class="article-info">
+<div class="badge-row"><span class="category-badge">Смартфоны</span><span class="category-badge badge-gray">Обзор</span></div>
+<h3>Samsung Galaxy S25 Ultra: месяц использования — честный взгляд</h3>
+<p>Флагман с S Pen, камерой 200 МП и тонной ИИ-функций. Месяц таскали его в кармане вместо привычного iPhone. Рассказываем, что из об…</p>
+<div class="article-foot"><span>20 мая 2026</span><span>· 9 мин</span><span>· 10 200 просм.</span></div>
+</div></a><a href="obzory/iphone-16-pro-max/" class="article-item">
+<div class="article-thumb" style="background:linear-gradient(135deg,#eef2ff,#e0e7ff);"><svg width="34" height="56" viewBox="0 0 34 56" fill="none"><rect x="3" y="2" width="28" height="52" rx="6" fill="#1a1a2e" stroke="#3a3a5c" stroke-width="1.2"/><rect x="6" y="7" width="22" height="40" rx="4" fill="#0d0d1a"/><circle cx="17" cy="9.5" r="1.2" fill="#2a2a4a"/><rect x="12" y="50" width="10" height="2" rx="1" fill="#3a3a5c"/></svg><div class="score-overlay">9.2</div></div>
+<div class="article-info">
+<div class="badge-row"><span class="category-badge">Смартфоны</span><span class="category-badge badge-gray">Топ выбор</span></div>
+<h3>iPhone 16 Pro Max: зачем платить 110 000 рублей и есть ли смысл</h3>
+<p>Самый дорогой серийный iPhone в России. A18 Pro, перископ 5x, рекордная автономность. Месяц носили его как основной телефон и тепе…</p>
+<div class="article-foot"><span>19 мая 2026</span><span>· 8 мин</span><span>· 12 400 просм.</span></div>
+</div></a><a href="obzory/macbook-air-m3/" class="article-item">
+<div class="article-thumb" style="background:linear-gradient(135deg,#f0f0ee,#e4e4e0);"><svg width="64" height="42" viewBox="0 0 64 42" fill="none"><rect x="6" y="2" width="52" height="32" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="9" y="5" width="46" height="24" rx="2" fill="#10162a"/><rect x="2" y="34" width="60" height="6" rx="3" fill="#3a3a3a"/></svg><div class="score-overlay">9.0</div></div>
+<div class="article-info">
+<div class="badge-row"><span class="category-badge">Ноутбуки</span><span class="category-badge badge-gray">Apple</span></div>
+<h3>MacBook Air 15" M3 — лучший ноутбук для работы или маркетинг Apple?</h3>
+<p>18 часов автономности, полная тишина и большой экран в корпусе весом полтора килограмма. Две недели работали на нём без розетки и …</p>
+<div class="article-foot"><span>17 мая 2026</span><span>· 7 мин</span><span>· 9 800 просм.</span></div>
+</div></a><a href="obzory/dyson-v15/" class="article-item">
+<div class="article-thumb" style="background:linear-gradient(135deg,#f0f7f0,#e4f0e4);"><svg width="30" height="50" viewBox="0 0 30 50" fill="none"><rect x="12" y="8" width="6" height="32" rx="3" fill="#c8a000"/><circle cx="15" cy="8" r="7" fill="#e5b800"/><circle cx="15" cy="8" r="3.4" fill="#fff4cc"/><ellipse cx="11" cy="42" rx="7" ry="3.4" fill="#b89000"/></svg><div class="score-overlay">8.7</div></div>
+<div class="article-info">
+<div class="badge-row"><span class="category-badge">Техника</span><span class="category-badge badge-gray">Dyson</span></div>
+<h3>Dyson V15 Detect: оправдывает ли лазерный пылесос свою цену в 50 000 ₽</h3>
+<p>Пылесос с лазером и экраном, показывающим размер всосанных частиц. Звучит как гаджет ради гаджета. Месяц гоняли его по коврам, пар…</p>
+<div class="article-foot"><span>15 мая 2026</span><span>· 6 мин</span><span>· 7 200 просм.</span></div>
+</div></a><a href="top/noutbuki-do-80000/" class="article-item">
+<div class="article-thumb" style="background:linear-gradient(135deg,#f0f0ee,#e4e4e0);"><svg width="64" height="42" viewBox="0 0 64 42" fill="none"><rect x="6" y="2" width="52" height="32" rx="3" fill="#2a2a2a" stroke="#444"/><rect x="9" y="5" width="46" height="24" rx="2" fill="#10162a"/><rect x="2" y="34" width="60" height="6" rx="3" fill="#3a3a3a"/></svg></div>
+<div class="article-info">
+<div class="badge-row"><span class="category-badge">Рейтинг</span></div>
+<h3>Топ-5 ноутбуков до 80 000 рублей в 2026 году: рейтинг редакции</h3>
+<p>Бюджет до 80 тысяч — самый массовый и самый минный сегмент: за эти деньги легко купить и отличный рабочий инструмент, и красивый к…</p>
+<div class="article-foot"><span>14 мая 2026</span><span>· 7 мин</span><span>· 9 800 просм.</span></div>
+</div></a><a href="obzory/airpods-pro-3/" class="article-item">
+<div class="article-thumb" style="background:linear-gradient(135deg,#f5f0ff,#ede0ff);"><svg width="56" height="42" viewBox="0 0 56 42" fill="none"><path d="M12 26 Q12 8 28 8 Q44 8 44 26" stroke="#1a1a2e" stroke-width="2.6" fill="none" stroke-linecap="round"/><rect x="6" y="24" width="10" height="14" rx="5" fill="#1a1a2e"/><rect x="40" y="24" width="10" height="14" rx="5" fill="#1a1a2e"/></svg><div class="score-overlay">8.9</div></div>
+<div class="article-info">
+<div class="badge-row"><span class="category-badge">Аудио</span><span class="category-badge badge-gray">Сравнение</span></div>
+<h3>AirPods Pro 3 против Sony WH-1000XM6: какие наушники взять в 2026 году</h3>
+<p>Вкладыши против полноразмеров, Apple против Sony, 25 против 45 тысяч. Сравнение нечестное по форм-фактору, но именно между этими д…</p>
+<div class="article-foot"><span>12 мая 2026</span><span>· 10 мин</span><span>· 15 600 просм.</span></div>
+</div></a><a href="obzory/xiaomi-15-pro/" class="article-item">
+<div class="article-thumb" style="background:linear-gradient(135deg,#eef2ff,#e0e7ff);"><svg width="34" height="56" viewBox="0 0 34 56" fill="none"><rect x="3" y="2" width="28" height="52" rx="6" fill="#1a1a2e" stroke="#3a3a5c" stroke-width="1.2"/><rect x="6" y="7" width="22" height="40" rx="4" fill="#0d0d1a"/><circle cx="17" cy="9.5" r="1.2" fill="#2a2a4a"/><rect x="12" y="50" width="10" height="2" rx="1" fill="#3a3a5c"/></svg><div class="score-overlay">8.8</div></div>
+<div class="article-info">
+<div class="badge-row"><span class="category-badge">Смартфоны</span><span class="category-badge badge-gray">Xiaomi</span></div>
+<h3>Xiaomi 15 Pro: флагман за 80 000 рублей, который бьёт iPhone по камере?</h3>
+<p>Snapdragon 8 Elite, оптика Leica и зарядка 90 Вт за две трети цены iPhone. Хайпа вокруг него много. Проверяем камеру против 16 Pro…</p>
+<div class="article-foot"><span>10 мая 2026</span><span>· 8 мин</span><span>· 18 900 просм.</span></div>
+</div></a><a href="obzory/sony-wh1000xm6/" class="article-item">
+<div class="article-thumb" style="background:linear-gradient(135deg,#f5f0ff,#ede0ff);"><svg width="56" height="42" viewBox="0 0 56 42" fill="none"><path d="M12 26 Q12 8 28 8 Q44 8 44 26" stroke="#1a1a2e" stroke-width="2.6" fill="none" stroke-linecap="round"/><rect x="6" y="24" width="10" height="14" rx="5" fill="#1a1a2e"/><rect x="40" y="24" width="10" height="14" rx="5" fill="#1a1a2e"/></svg><div class="score-overlay">9.1</div></div>
+<div class="article-info">
+<div class="badge-row"><span class="category-badge">Аудио</span><span class="category-badge badge-gray">Sony</span></div>
+<h3>Sony WH-1000XM6: лучший шумодав 2026 года или уже не то?</h3>
+<p>Шестое поколение наушников, которые шесть лет подряд называли эталоном шумоподавления. Конкуренты подтянулись, цена выросла. Прове…</p>
+<div class="article-foot"><span>8 мая 2026</span><span>· 7 мин</span><span>· 11 400 просм.</span></div>
+</div></a><a href="obzory/samsung-qled-tv/" class="article-item">
+<div class="article-thumb" style="background:linear-gradient(135deg,#f0f0f0,#e4e4e4);"><svg width="64" height="42" viewBox="0 0 64 42" fill="none"><rect x="3" y="3" width="58" height="32" rx="3" fill="#1a1a1a" stroke="#333"/><rect x="6" y="6" width="52" height="26" rx="2" fill="#101a33"/><rect x="24" y="36" width="16" height="3" rx="1.5" fill="#2a2a2a"/></svg><div class="score-overlay">8.6</div></div>
+<div class="article-info">
+<div class="badge-row"><span class="category-badge">Телевизоры</span><span class="category-badge badge-gray">Samsung</span></div>
+<h3>Samsung Neo QLED 8K 2026: зачем платить 300 000 ₽ за телевизор</h3>
+<p>Флагманский 75-дюймовый Neo QLED с 8K-матрицей и ИИ-апскейлом. Контента в 8K по-прежнему нет. Так за что просят триста тысяч и вид…</p>
+<div class="article-foot"><span>5 мая 2026</span><span>· 9 мин</span><span>· 6 800 просм.</span></div>
+</div></a><a href="obzory/apple-watch-ultra-2/" class="article-item">
+<div class="article-thumb" style="background:linear-gradient(135deg,#f5f5f0,#ebebdf);"><svg width="36" height="46" viewBox="0 0 36 46" fill="none"><rect x="12" y="0" width="12" height="6" rx="2.4" fill="#555"/><rect x="12" y="40" width="12" height="6" rx="2.4" fill="#555"/><rect x="6" y="7" width="24" height="32" rx="6" fill="#1c1c1e" stroke="#3a3a3c"/><circle cx="18" cy="23" r="6.4" stroke="#f59e0b" stroke-width="1.6" fill="none"/><path d="M18 17 L18 23 L21.4 23" stroke="#f59e0b" stroke-width="1.3" stroke-linecap="round"/></svg><div class="score-overlay">9.0</div></div>
+<div class="article-info">
+<div class="badge-row"><span class="category-badge">Гаджеты</span><span class="category-badge badge-gray">Apple</span></div>
+<h3>Apple Watch Ultra 2: нужны ли вам часы за 80 000 ₽ если вы не альпинист</h3>
+<p>Титановый корпус, 60 часов автономности, сирена и погружения до 40 метров. Маркетинг целится в экстремалов, но покупают их офисные…</p>
+<div class="article-foot"><span>2 мая 2026</span><span>· 8 мин</span><span>· 8 900 просм.</span></div>
+</div></a></div>
+<div class="section-label">Разделы</div>
+<div class="cats-grid"><a href="smartfony/" class="cat-card"><h3>Смартфоны</h3><p>Обзоры и сравнения смартфонов: флагманы, средний класс и бюджетн…</p></a><a href="noutbuki/" class="cat-card"><h3>Ноутбуки</h3><p>Обзоры ноутбуков для работы, учёбы и игр. Реальные замеры автоно…</p></a><a href="televizory/" class="cat-card"><h3>Телевизоры</h3><p>Тесты телевизоров: OLED, QLED, mini-LED. Какой брать для фильмов…</p></a><a href="audio/" class="cat-card"><h3>Аудио</h3><p>Наушники, колонки и саундбары. Сравниваем шумоподавление, звук и…</p></a><a href="bytovaya-tehnika/" class="cat-card"><h3>Бытовая техника</h3><p>Пылесосы, роботы, кухонная техника. Тестируем в реальных квартир…</p></a><a href="gadzhety/" class="cat-card"><h3>Гаджеты</h3><p>Умные часы, браслеты, трекеры и аксессуары. Что из носимой элект…</p></a><a href="top/" class="cat-card"><h3>Рейтинги и подборки</h3><p>Топы лучших товаров по категориям и бюджетам. Только то, что мы …</p></a><a href="sravnenie/" class="cat-card"><h3>Сравнения</h3><p>Очные дуэли популярных устройств: раунд за раундом до победителя…</p></a><a href="gajdy/" class="cat-card"><h3>Гайды</h3><p>Как выбрать технику и не пожалеть: понятные инструкции без воды.…</p></a></div>
+</div>
+<footer><div class="container">
+<div class="footer-grid">
+<div class="footer-brand"><a href="./" class="logo">Tech<span>Review</span></a>
+<p>Независимые обзоры техники и гаджетов. Тестируем честно — без рекламных бюджетов.</p></div>
+<div class="footer-col"><h4>Категории</h4>
+<a href="smartfony/">Смартфоны</a><a href="noutbuki/">Ноутбуки</a><a href="televizory/">Телевизоры</a><a href="audio/">Аудио</a><a href="bytovaya-tehnika/">Техника</a></div>
+<div class="footer-col"><h4>Материалы</h4>
+<a href="obzory/">Все обзоры</a><a href="top/">Рейтинги</a><a href="gajdy/">Гайды</a><a href="sravnenie/">Сравнения</a></div>
+<div class="footer-col"><h4>О сайте</h4>
+<a href="o-nas/">О нас</a><a href="kontakty/">Контакты</a><a href="politika/">Конфиденциальность</a>
+<a href="https://taplink.cc/josechow" target="_blank" rel="noopener" style="color:var(--accent)">Наши каналы →</a></div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 TechReview. Все права защищены.</p>
+<p class="footer-disclaimer">Сайт участвует в партнёрской программе Яндекс.Маркета. При покупке через партнёрские ссылки мы получаем комиссию — для вас цена не меняется.</p>
+</div></div></footer>
 <script>
 function toggleNav() {
   const cats = document.querySelector('.nav-cats');
   const open = cats.style.display === 'flex';
   cats.style.display = open ? 'none' : 'flex';
-  if (!open) { Object.assign(cats.style, { flexDirection:'column', position:'absolute', top:'56px', left:'0', right:'0', background:'#fff', borderBottom:'1px solid #e8e8e4', padding:'8px 24px 16px', zIndex:'199' }); }
-}
-function filterArticles(cat, btn) {
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  document.querySelectorAll('#article-list .article-item').forEach(item => {
-    item.style.display = (cat === 'all' || item.dataset.cat === cat) ? 'grid' : 'none';
-  });
+  if (!open) Object.assign(cats.style, { flexDirection:'column', position:'absolute', top:'56px', left:'0', right:'0', background:'#fff', borderBottom:'1px solid #e8e8e4', padding:'8px 24px 16px', zIndex:'199' });
 }
 </script>
-</body>
-</html>
+</body></html>
