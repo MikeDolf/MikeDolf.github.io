@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="Tu38XET2r-6SOtMHPRbWSF2cZOgfrtN8_Hnw5PSv4Xo" />
 <title>Все обзоры техники и гаджетов | TechReview</title>
 <meta name="description" content="Все обзоры смартфонов, ноутбуков, наушников и бытовой техники. Честные тесты с оценками редакции и лучшими ценами на Яндекс.Маркете.">
 <meta name="robots" content="index, follow">
@@ -40,8 +41,6 @@ html { scroll-behavior: smooth; }
 }
 body { font-family: 'Geologica', sans-serif; background: var(--white); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
 a { color: inherit; text-decoration: none; }
-
-/* NAV */
 .nav { position: sticky; top: 0; z-index: 200; background: rgba(255,255,255,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
 .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; height: 56px; }
 .logo { font-weight: 900; font-size: 18px; letter-spacing: -0.5px; color: var(--text); margin-right: 32px; flex-shrink: 0; }
@@ -55,28 +54,20 @@ a { color: inherit; text-decoration: none; }
 .nav-search { display: flex; align-items: center; gap: 8px; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 6px 12px; font-size: 13px; color: var(--text3); cursor: pointer; }
 .nav-search svg { width: 14px; height: 14px; }
 .burger { display: none; background: none; border: none; cursor: pointer; padding: 4px; margin-left: 8px; }
-
-/* LAYOUT */
 .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 .breadcrumb { padding: 20px 0 0; display: flex; gap: 6px; font-size: 13px; color: var(--text3); align-items: center; flex-wrap: wrap; }
 .breadcrumb a { color: var(--text3); transition: color 0.15s; }
 .breadcrumb a:hover { color: var(--accent); }
 .page-grid { display: grid; grid-template-columns: 1fr 300px; gap: 48px; padding: 32px 0 80px; }
-
-/* PAGE HEADER */
 .page-header { margin-bottom: 32px; padding-bottom: 24px; border-bottom: 2px solid var(--text); }
 .page-header h1 { font-family: 'Spectral', serif; font-size: 36px; font-weight: 600; letter-spacing: -0.5px; margin-bottom: 8px; }
 .page-header p { font-size: 16px; color: var(--text2); }
 .page-header-meta { display: flex; align-items: center; gap: 16px; margin-top: 16px; }
 .count-badge { font-size: 13px; font-weight: 600; color: var(--text3); background: var(--bg); padding: 4px 12px; border-radius: 100px; border: 1px solid var(--border); }
-
-/* FILTER BAR */
 .filter-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
 .filter-btn { font-size: 13px; font-weight: 500; padding: 7px 16px; border-radius: 100px; border: 1px solid var(--border); background: var(--white); color: var(--text2); cursor: pointer; transition: all 0.15s; font-family: 'Geologica', sans-serif; }
 .filter-btn:hover { border-color: var(--accent); color: var(--accent); }
 .filter-btn.active { background: var(--accent); color: white; border-color: var(--accent); }
-
-/* FEATURED ROW */
 .featured-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 32px; }
 .featured-card { border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; background: var(--white); transition: box-shadow 0.2s, transform 0.2s; }
 .featured-card:hover { box-shadow: var(--shadow-md); transform: translateY(-1px); }
@@ -87,8 +78,6 @@ a { color: inherit; text-decoration: none; }
 .featured-body p { font-size: 13px; color: var(--text2); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .featured-foot { display: flex; align-items: center; justify-content: space-between; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
 .score-pill { font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 100px; background: var(--green-light); color: var(--green); }
-
-/* ARTICLE LIST */
 .section-label { font-size: 12px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: var(--text3); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
 .article-list { display: flex; flex-direction: column; }
 .article-item { display: grid; grid-template-columns: 120px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--border); transition: opacity 0.15s; }
@@ -101,28 +90,17 @@ a { color: inherit; text-decoration: none; }
 .article-info h3 { font-size: 15px; font-weight: 600; line-height: 1.35; color: var(--text); }
 .article-info p { font-size: 13px; color: var(--text2); line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .article-foot { display: flex; align-items: center; gap: 10px; margin-top: 2px; }
-.article-date { font-size: 12px; color: var(--text3); }
-.article-views { font-size: 12px; color: var(--text3); }
-.article-read { font-size: 12px; color: var(--text3); }
-
-/* CATEGORY BADGE */
+.article-date, .article-views, .article-read { font-size: 12px; color: var(--text3); }
 .category-badge { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: 0.3px; padding: 3px 9px; border-radius: 4px; background: var(--accent-light); color: var(--accent); }
 .badge-green { background: var(--green-light); color: var(--green); }
 .badge-amber { background: var(--amber-light); color: var(--amber); }
 .badge-gray { background: var(--bg2); color: var(--text2); }
 .badge-purple { background: #f5f0ff; color: #7c3aed; }
-
-/* LOAD MORE */
 .load-more-wrap { text-align: center; padding: 32px 0; }
 .load-more-btn { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--accent); border: 1.5px solid var(--accent); padding: 10px 28px; border-radius: 100px; cursor: pointer; background: none; font-family: 'Geologica'; transition: all 0.15s; }
 .load-more-btn:hover { background: var(--accent); color: white; }
-
-/* SIDEBAR */
 .sidebar { display: flex; flex-direction: column; gap: 28px; padding-top: 32px; }
-.sidebar-block {}
 .sidebar-title { font-size: 12px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: var(--text3); margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
-
-/* BEST LIST SIDEBAR */
 .best-list { display: flex; flex-direction: column; }
 .best-item { display: flex; align-items: flex-start; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--border); transition: opacity 0.15s; }
 .best-item:last-child { border-bottom: none; }
@@ -133,13 +111,9 @@ a { color: inherit; text-decoration: none; }
 .best-tag { font-size: 11px; font-weight: 600; color: var(--accent); text-transform: uppercase; }
 .best-title { font-size: 13px; font-weight: 600; color: var(--text); line-height: 1.35; }
 .best-meta { font-size: 11px; color: var(--text3); }
-
-/* TAGS */
 .tags-cloud { display: flex; flex-wrap: wrap; gap: 7px; }
 .tag-chip { font-size: 13px; color: var(--text2); background: var(--bg); border: 1px solid var(--border); padding: 5px 12px; border-radius: 100px; transition: all 0.15s; }
 .tag-chip:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-light); }
-
-/* NEWSLETTER */
 .newsletter-block { background: var(--accent); color: white; border-radius: var(--radius-lg); padding: 20px; }
 .newsletter-block h3 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
 .newsletter-block p { font-size: 13px; opacity: 0.85; margin-bottom: 14px; }
@@ -147,8 +121,6 @@ a { color: inherit; text-decoration: none; }
 .newsletter-form input { flex: 1; padding: 9px 12px; border: none; border-radius: var(--radius); font-size: 13px; font-family: 'Geologica'; outline: none; min-width: 0; }
 .newsletter-form button { background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3); border-radius: var(--radius); padding: 9px 14px; font-size: 13px; font-weight: 600; cursor: pointer; font-family: 'Geologica'; white-space: nowrap; transition: background 0.15s; }
 .newsletter-form button:hover { background: rgba(255,255,255,0.35); }
-
-/* FOOTER */
 footer { border-top: 1px solid var(--border); padding: 40px 0 28px; background: var(--bg); }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 28px; }
 .footer-brand .logo { display: block; font-size: 18px; margin-bottom: 10px; }
@@ -159,15 +131,11 @@ footer { border-top: 1px solid var(--border); padding: 40px 0 28px; background: 
 .footer-bottom { padding-top: 20px; border-top: 1px solid var(--border); display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; }
 .footer-bottom p { font-size: 12px; color: var(--text3); }
 .footer-disclaimer { font-size: 12px; color: var(--text3); max-width: 500px; line-height: 1.6; }
-
-/* RESPONSIVE */
 @media (max-width: 900px) { .page-grid { grid-template-columns: 1fr; } .sidebar { display: none; } .footer-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 640px) { .featured-row { grid-template-columns: 1fr; } .article-thumb { width: 90px; height: 62px; } .nav-cats { display: none; } .burger { display: flex; } .footer-grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
-
-<!-- NAV -->
 <nav class="nav">
   <div class="nav-inner">
     <a href="../" class="logo">Tech<span>Review</span></a>
@@ -192,17 +160,12 @@ footer { border-top: 1px solid var(--border); padding: 40px 0 28px; background: 
     </div>
   </div>
 </nav>
-
 <div class="container">
-  <!-- BREADCRUMB -->
   <div class="breadcrumb">
     <a href="../">Главная</a> › <span>Все обзоры</span>
   </div>
-
   <div class="page-grid">
     <main role="main">
-
-      <!-- PAGE HEADER -->
       <div class="page-header">
         <h1>Все обзоры</h1>
         <p>Честные тесты техники и гаджетов — без рекламных бюджетов и предвзятости</p>
@@ -211,8 +174,6 @@ footer { border-top: 1px solid var(--border); padding: 40px 0 28px; background: 
           <span style="font-size:13px;color:var(--text3)">Обновляется каждую неделю</span>
         </div>
       </div>
-
-      <!-- FILTER BAR -->
       <div class="filter-bar" role="group" aria-label="Фильтр по категориям">
         <button class="filter-btn active" onclick="filterArticles('all', this)">Все</button>
         <button class="filter-btn" onclick="filterArticles('smartfony', this)">Смартфоны</button>
@@ -222,249 +183,118 @@ footer { border-top: 1px solid var(--border); padding: 40px 0 28px; background: 
         <button class="filter-btn" onclick="filterArticles('gadzhety', this)">Гаджеты</button>
         <button class="filter-btn" onclick="filterArticles('televizory', this)">Телевизоры</button>
       </div>
-
-      <!-- FEATURED 2 TOP ARTICLES -->
       <div class="featured-row">
-
         <a href="../obzory/samsung-galaxy-s25-ultra/" data-cat="smartfony">
           <div class="featured-card">
-            <div class="featured-thumb" style="background:linear-gradient(135deg,#0f0f23,#1a1a3e);">
-              <svg width="52" height="88" viewBox="0 0 52 88" fill="none"><rect x="8" y="4" width="36" height="80" rx="8" fill="#1e1e2e" stroke="#3a3a5c" stroke-width="1.5"/><rect x="11" y="12" width="30" height="60" rx="5" fill="#0d0d1a"/><rect x="16" y="14" width="20" height="5" rx="2.5" fill="#111122"/><circle cx="24" cy="16.5" r="1.8" fill="#1a3a6a"/><circle cx="32" cy="16.5" r="1.8" fill="#1a3a6a"/><rect x="40" y="32" width="3" height="20" rx="1.5" fill="#2a2a3e"/><rect x="17" y="26" width="18" height="12" rx="3" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/><rect x="11" y="46" width="8" height="8" rx="2" fill="#4f46e5"/><rect x="22" y="46" width="8" height="8" rx="2" fill="#0ea5e9"/><rect x="33" y="46" width="8" height="8" rx="2" fill="#10b981"/><rect x="11" y="57" width="8" height="8" rx="2" fill="#f59e0b"/><rect x="22" y="57" width="8" height="8" rx="2" fill="#ef4444"/><rect x="33" y="57" width="8" height="8" rx="2" fill="#8b5cf6"/><rect x="18" y="78" width="16" height="3" rx="1.5" fill="rgba(255,255,255,0.2)"/></svg>
-            </div>
+            <div class="featured-thumb" style="background:linear-gradient(135deg,#0f0f23,#1a1a3e);"></div>
             <div class="featured-body">
-              <div class="badge-row">
-                <span class="category-badge">Обзор</span>
-                <span class="category-badge badge-gray">Смартфоны</span>
-              </div>
+              <div class="badge-row"><span class="category-badge">Обзор</span><span class="category-badge badge-gray">Смартфоны</span></div>
               <h2>Samsung Galaxy S25 Ultra: месяц использования — честный взгляд</h2>
               <p>Флагман с S Pen, 200 МП камерой и ИИ. Стоит ли переплачивать за Ultra?</p>
-              <div class="featured-foot">
-                <span style="font-size:12px;color:var(--text3)">20 мая 2026 · 9 мин</span>
-                <span class="score-pill">★ 9.1/10</span>
-              </div>
+              <div class="featured-foot"><span style="font-size:12px;color:var(--text3)">20 мая 2026 · 9 мин</span><span class="score-pill">★ 9.1/10</span></div>
             </div>
           </div>
         </a>
-
         <a href="../obzory/iphone-16-pro-max/" data-cat="smartfony">
           <div class="featured-card">
-            <div class="featured-thumb" style="background:linear-gradient(135deg,#f5f5f7,#e0e0ea);">
-              <svg width="48" height="84" viewBox="0 0 48 84" fill="none"><rect x="6" y="3" width="36" height="78" rx="9" fill="#1c1c1e" stroke="#3a3a3c" stroke-width="1.5"/><rect x="10" y="10" width="28" height="60" rx="6" fill="#000"/><rect x="16" y="11" width="16" height="5" rx="2.5" fill="#2a2a2c"/><circle cx="24" cy="13.5" r="1.5" fill="#1a1a1c"/><rect x="17" y="76" width="14" height="3" rx="1.5" fill="#3a3a3c"/></svg>
-            </div>
+            <div class="featured-thumb" style="background:linear-gradient(135deg,#f5f5f7,#e0e0ea);"></div>
             <div class="featured-body">
-              <div class="badge-row">
-                <span class="category-badge">Обзор</span>
-                <span class="category-badge badge-green">Топ выбор</span>
-              </div>
+              <div class="badge-row"><span class="category-badge">Обзор</span><span class="category-badge badge-green">Топ выбор</span></div>
               <h2>iPhone 16 Pro Max: зачем платить 110 000 рублей и есть ли смысл</h2>
               <p>A18 Pro, камера 5x, рекордная автономность. Стоит ли апгрейд с 14 Pro?</p>
-              <div class="featured-foot">
-                <span style="font-size:12px;color:var(--text3)">19 мая 2026 · 8 мин</span>
-                <span class="score-pill">★ 9.2/10</span>
-              </div>
+              <div class="featured-foot"><span style="font-size:12px;color:var(--text3)">19 мая 2026 · 8 мин</span><span class="score-pill">★ 9.2/10</span></div>
             </div>
           </div>
         </a>
-
       </div>
-
-      <!-- ALL ARTICLES -->
       <div class="section-label">Все материалы — от свежих к старым</div>
-
       <div class="article-list" id="article-list">
-
-        <a href="../obzory/macbook-air-m3/" class="article-item" data-cat="noutbuki" itemscope itemtype="https://schema.org/Article">
-          <div class="article-thumb" style="background:linear-gradient(135deg,#f0f0ee,#e4e4e0);">
-            <svg width="72" height="48" viewBox="0 0 72 48" fill="none"><rect x="6" y="2" width="60" height="36" rx="4" fill="#2a2a2a" stroke="#444" stroke-width="1"/><rect x="9" y="5" width="54" height="28" rx="2" fill="#111"/><rect x="9" y="5" width="54" height="28" rx="2" fill="url(#mb2)"/><rect x="2" y="38" width="68" height="8" rx="3" fill="#3a3a3a"/><rect x="24" y="40" width="24" height="4" rx="2" fill="#555"/><defs><linearGradient id="mb2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a3a6a" stop-opacity="0.5"/><stop offset="1" stop-color="#000" stop-opacity="0.9"/></linearGradient></defs></svg>
-            <div class="score-overlay">9.0</div>
-          </div>
+        <a href="../obzory/macbook-air-m3/" class="article-item" data-cat="noutbuki">
+          <div class="article-thumb" style="background:linear-gradient(135deg,#f0f0ee,#e4e4e0);"><div class="score-overlay">9.0</div></div>
           <div class="article-info">
             <div class="badge-row"><span class="category-badge badge-amber">Ноутбуки</span><span class="category-badge badge-gray">Apple</span></div>
-            <h3 itemprop="headline">MacBook Air 15" M3 — лучший ноутбук для работы или маркетинг Apple?</h3>
+            <h3>MacBook Air 15" M3 — лучший ноутбук для работы или маркетинг Apple?</h3>
             <p>18 часов автономности, тихая работа и дисплей Liquid Retina. Проверяем, насколько M3 быстрее M2.</p>
-            <div class="article-foot">
-              <span class="article-date">17 мая 2026</span>
-              <span class="article-read">· 7 мин</span>
-              <span class="article-views">· 9 800 просм.</span>
-            </div>
+            <div class="article-foot"><span class="article-date">17 мая 2026</span><span class="article-read">· 7 мин</span><span class="article-views">· 9 800 просм.</span></div>
           </div>
         </a>
-
-        <a href="../obzory/dyson-v15/" class="article-item" data-cat="tehnika" itemscope itemtype="https://schema.org/Article">
-          <div class="article-thumb" style="background:linear-gradient(135deg,#f0f7f0,#e4f0e4);">
-            <svg width="40" height="64" viewBox="0 0 40 64" fill="none"><ellipse cx="20" cy="52" rx="12" ry="7" fill="#c8a000" opacity="0.2"/><rect x="17" y="10" width="6" height="40" rx="3" fill="#c8a000"/><ellipse cx="20" cy="10" rx="9" ry="9" fill="#e5b800" stroke="#c8a000" stroke-width="1.5"/><ellipse cx="20" cy="10" rx="5" ry="5" fill="#ffd700"/><ellipse cx="20" cy="10" rx="2.5" ry="2.5" fill="#fff8e0"/><path d="M11 18 Q6 28 8 40 Q10 48 17 50" stroke="#c8a000" stroke-width="2" fill="none" stroke-linecap="round"/><ellipse cx="12" cy="50" rx="7" ry="3.5" fill="#b89000" stroke="#c8a000" stroke-width="1"/></svg>
-            <div class="score-overlay">8.7</div>
-          </div>
+        <a href="../obzory/dyson-v15/" class="article-item" data-cat="tehnika">
+          <div class="article-thumb" style="background:linear-gradient(135deg,#f0f7f0,#e4f0e4);"><div class="score-overlay">8.7</div></div>
           <div class="article-info">
             <div class="badge-row"><span class="category-badge badge-green">Техника</span><span class="category-badge badge-gray">Dyson</span></div>
-            <h3 itemprop="headline">Dyson V15 Detect: оправдывает ли лазерный пылесос свою цену в 50 000 ₽</h3>
+            <h3>Dyson V15 Detect: оправдывает ли лазерный пылесос свою цену в 50 000 ₽</h3>
             <p>Тестировали на коврах, паркете и длинном ворсе. Лазерная подсветка пыли — маркетинг или польза?</p>
-            <div class="article-foot">
-              <span class="article-date">15 мая 2026</span>
-              <span class="article-read">· 6 мин</span>
-              <span class="article-views">· 7 200 просм.</span>
-            </div>
+            <div class="article-foot"><span class="article-date">15 мая 2026</span><span class="article-read">· 6 мин</span><span class="article-views">· 7 200 просм.</span></div>
           </div>
         </a>
-
-        <a href="../obzory/airpods-pro-3/" class="article-item" data-cat="audio" itemscope itemtype="https://schema.org/Article">
-          <div class="article-thumb" style="background:linear-gradient(135deg,#f5f0ff,#ede0ff);">
-            <svg width="68" height="52" viewBox="0 0 68 52" fill="none"><rect x="10" y="6" width="18" height="38" rx="9" fill="#e8e8e8" stroke="#ccc" stroke-width="1"/><rect x="14" y="10" width="10" height="22" rx="5" fill="#f5f5f5"/><rect x="18" y="32" width="3" height="8" rx="1.5" fill="#ddd"/><rect x="40" y="6" width="18" height="38" rx="9" fill="#e8e8e8" stroke="#ccc" stroke-width="1"/><rect x="44" y="10" width="10" height="22" rx="5" fill="#f5f5f5"/><rect x="48" y="32" width="3" height="8" rx="1.5" fill="#ddd"/><circle cx="19" cy="18" r="3" fill="#ccc"/><circle cx="49" cy="18" r="3" fill="#ccc"/></svg>
-            <div class="score-overlay">8.9</div>
-          </div>
+        <a href="../obzory/airpods-pro-3/" class="article-item" data-cat="audio">
+          <div class="article-thumb" style="background:linear-gradient(135deg,#f5f0ff,#ede0ff);"><div class="score-overlay">8.9</div></div>
           <div class="article-info">
             <div class="badge-row"><span class="category-badge badge-purple">Аудио</span></div>
             <h3>AirPods Pro 3 против Sony WH-1000XM6: какие наушники взять в 2026 году</h3>
             <p>Сравниваем шумодав, звук, автономность и удобство. Переплачивать за Apple или Sony выгоднее?</p>
-            <div class="article-foot">
-              <span class="article-date">12 мая 2026</span>
-              <span class="article-read">· 10 мин</span>
-              <span class="article-views">· 15 600 просм.</span>
-            </div>
+            <div class="article-foot"><span class="article-date">12 мая 2026</span><span class="article-read">· 10 мин</span><span class="article-views">· 15 600 просм.</span></div>
           </div>
         </a>
-
-        <a href="../obzory/xiaomi-15-pro/" class="article-item" data-cat="smartfony" itemscope itemtype="https://schema.org/Article">
-          <div class="article-thumb" style="background:linear-gradient(135deg,#fff5f0,#ffe8e0);">
-            <svg width="44" height="72" viewBox="0 0 44 72" fill="none"><rect x="4" y="2" width="36" height="68" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="1"/><rect x="7" y="8" width="30" height="52" rx="5" fill="#111"/><rect x="7" y="8" width="30" height="52" rx="5" fill="url(#xi2)"/><circle cx="22" cy="10.5" r="1.5" fill="#333"/><rect x="12" y="14" width="4" height="4" rx="2" fill="#0a0a0a" stroke="#333" stroke-width="1"/><rect x="28" y="14" width="4" height="4" rx="2" fill="#0a0a0a" stroke="#333" stroke-width="1"/><rect x="16" y="66" width="12" height="2" rx="1" fill="#333"/><defs><linearGradient id="xi2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff4400" stop-opacity="0.12"/><stop offset="1" stop-color="#000" stop-opacity="0.9"/></linearGradient></defs></svg>
-            <div class="score-overlay">8.8</div>
-          </div>
+        <a href="../obzory/xiaomi-15-pro/" class="article-item" data-cat="smartfony">
+          <div class="article-thumb" style="background:linear-gradient(135deg,#fff5f0,#ffe8e0);"><div class="score-overlay">8.8</div></div>
           <div class="article-info">
             <div class="badge-row"><span class="category-badge">Смартфоны</span><span class="category-badge badge-gray">Xiaomi</span></div>
             <h3>Xiaomi 15 Pro: флагман за 80 000 рублей, который бьёт iPhone по камере?</h3>
             <p>Snapdragon 8 Elite, Leica-камера и зарядка 90W. Проверяем реальность хайпа вокруг нового Xiaomi.</p>
-            <div class="article-foot">
-              <span class="article-date">10 мая 2026</span>
-              <span class="article-read">· 8 мин</span>
-              <span class="article-views">· 18 900 просм.</span>
-            </div>
+            <div class="article-foot"><span class="article-date">10 мая 2026</span><span class="article-read">· 8 мин</span><span class="article-views">· 18 900 просм.</span></div>
           </div>
         </a>
-
-        <a href="../obzory/sony-wh1000xm6/" class="article-item" data-cat="audio" itemscope itemtype="https://schema.org/Article">
-          <div class="article-thumb" style="background:linear-gradient(135deg,#f0f4ff,#e0e8ff);">
-            <svg width="72" height="52" viewBox="0 0 72 52" fill="none"><path d="M16 30 Q16 10 36 10 Q56 10 56 30" stroke="#1a1a2e" stroke-width="3" fill="none" stroke-linecap="round"/><rect x="8" y="28" width="12" height="18" rx="6" fill="#1a1a2e"/><rect x="52" y="28" width="12" height="18" rx="6" fill="#1a1a2e"/><rect x="10" y="30" width="8" height="14" rx="4" fill="#2a2a4e"/><rect x="54" y="30" width="8" height="14" rx="4" fill="#2a2a4e"/></svg>
-            <div class="score-overlay">9.1</div>
-          </div>
+        <a href="../obzory/sony-wh1000xm6/" class="article-item" data-cat="audio">
+          <div class="article-thumb" style="background:linear-gradient(135deg,#f0f4ff,#e0e8ff);"><div class="score-overlay">9.1</div></div>
           <div class="article-info">
             <div class="badge-row"><span class="category-badge badge-purple">Аудио</span><span class="category-badge badge-gray">Sony</span></div>
             <h3>Sony WH-1000XM6: лучший шумодав 2026 года или уже не то?</h3>
             <p>Новое поколение флагманских наушников Sony. Улучшился ли звук и стоит ли апгрейд с XM5?</p>
-            <div class="article-foot">
-              <span class="article-date">8 мая 2026</span>
-              <span class="article-read">· 7 мин</span>
-              <span class="article-views">· 11 400 просм.</span>
-            </div>
+            <div class="article-foot"><span class="article-date">8 мая 2026</span><span class="article-read">· 7 мин</span><span class="article-views">· 11 400 просм.</span></div>
           </div>
         </a>
-
-        <a href="../obzory/samsung-qled-tv/" class="article-item" data-cat="televizory" itemscope itemtype="https://schema.org/Article">
-          <div class="article-thumb" style="background:linear-gradient(135deg,#f0f0f0,#e4e4e4);">
-            <svg width="80" height="52" viewBox="0 0 80 52" fill="none"><rect x="4" y="4" width="72" height="42" rx="4" fill="#1a1a1a" stroke="#333" stroke-width="1"/><rect x="7" y="7" width="66" height="36" rx="2" fill="#0a0a0a"/><rect x="7" y="7" width="66" height="36" rx="2" fill="url(#tv)"/><rect x="28" y="46" width="24" height="4" rx="2" fill="#2a2a2a"/><rect x="36" y="44" width="8" height="6" rx="1" fill="#333"/><defs><linearGradient id="tv" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#003366" stop-opacity="0.6"/><stop offset="1" stop-color="#330066" stop-opacity="0.4"/></linearGradient></defs></svg>
-            <div class="score-overlay">8.6</div>
-          </div>
+        <a href="../obzory/samsung-qled-tv/" class="article-item" data-cat="televizory">
+          <div class="article-thumb" style="background:linear-gradient(135deg,#f0f0f0,#e4e4e4);"><div class="score-overlay">8.6</div></div>
           <div class="article-info">
             <div class="badge-row"><span class="category-badge badge-gray">Телевизоры</span><span class="category-badge badge-gray">Samsung</span></div>
             <h3>Samsung Neo QLED 8K 2026: зачем платить 300 000 ₽ за телевизор</h3>
             <p>Тестируем флагманский телевизор Samsung. Видна ли разница 8K в реальной жизни?</p>
-            <div class="article-foot">
-              <span class="article-date">5 мая 2026</span>
-              <span class="article-read">· 9 мин</span>
-              <span class="article-views">· 6 800 просм.</span>
-            </div>
+            <div class="article-foot"><span class="article-date">5 мая 2026</span><span class="article-read">· 9 мин</span><span class="article-views">· 6 800 просм.</span></div>
           </div>
         </a>
-
-        <a href="../obzory/apple-watch-ultra-2/" class="article-item" data-cat="gadzhety" itemscope itemtype="https://schema.org/Article">
-          <div class="article-thumb" style="background:linear-gradient(135deg,#f5f5f0,#ebebdf);">
-            <svg width="48" height="60" viewBox="0 0 48 60" fill="none"><rect x="16" y="0" width="16" height="8" rx="3" fill="#555"/><rect x="16" y="52" width="16" height="8" rx="3" fill="#555"/><rect x="8" y="10" width="32" height="40" rx="8" fill="#1c1c1e" stroke="#3a3a3c" stroke-width="1.5"/><rect x="11" y="14" width="26" height="32" rx="5" fill="#000"/><circle cx="24" cy="30" r="8" stroke="#f59e0b" stroke-width="2" fill="none"/><path d="M24 22 L24 30 L28 30" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/></svg>
-            <div class="score-overlay">9.0</div>
-          </div>
+        <a href="../obzory/apple-watch-ultra-2/" class="article-item" data-cat="gadzhety">
+          <div class="article-thumb" style="background:linear-gradient(135deg,#f5f5f0,#ebebdf);"><div class="score-overlay">9.0</div></div>
           <div class="article-info">
             <div class="badge-row"><span class="category-badge badge-gray">Гаджеты</span><span class="category-badge badge-gray">Apple</span></div>
             <h3>Apple Watch Ultra 2: нужны ли вам часы за 80 000 ₽ если вы не альпинист</h3>
             <p>Двойной дисплей, 60 часов автономности, спутниковая связь. Тест для обычного городского человека.</p>
-            <div class="article-foot">
-              <span class="article-date">2 мая 2026</span>
-              <span class="article-read">· 8 мин</span>
-              <span class="article-views">· 8 900 просм.</span>
-            </div>
+            <div class="article-foot"><span class="article-date">2 мая 2026</span><span class="article-read">· 8 мин</span><span class="article-views">· 8 900 просм.</span></div>
           </div>
         </a>
-
       </div>
-
-      <!-- LOAD MORE -->
       <div class="load-more-wrap">
-        <button class="load-more-btn" onclick="this.textContent='Загружаем...'">
-          Загрузить ещё обзоры
+        <button class="load-more-btn" onclick="this.textContent='Загружаем...'">Загрузить ещё обзоры
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 3v10M3 8l5 5 5-5"/></svg>
         </button>
       </div>
-
     </main>
-
-    <!-- SIDEBAR -->
     <aside class="sidebar">
-
-      <!-- BEST NOW -->
       <div class="sidebar-block">
         <div class="sidebar-title">Лучшее прямо сейчас</div>
         <div class="best-list">
-          <a href="../obzory/iphone-16-pro-max/" class="best-item">
-            <span class="best-num n1">1</span>
-            <div class="best-body">
-              <div class="best-tag">Обзор · Смартфоны</div>
-              <div class="best-title">iPhone 16 Pro Max: зачем платить 110 000 ₽</div>
-              <div class="best-meta">8 мин · 12 400 просм.</div>
-            </div>
-          </a>
-          <a href="../sravnenie/iphone-vs-samsung/" class="best-item">
-            <span class="best-num n2">2</span>
-            <div class="best-body">
-              <div class="best-tag">Сравнение</div>
-              <div class="best-title">iPhone vs Galaxy S25 Ultra: итог</div>
-              <div class="best-meta">10 мин · 21 800 просм.</div>
-            </div>
-          </a>
-          <a href="../obzory/airpods-pro-3/" class="best-item">
-            <span class="best-num n3">3</span>
-            <div class="best-body">
-              <div class="best-tag">Сравнение · Аудио</div>
-              <div class="best-title">AirPods Pro 3 vs Sony XM6</div>
-              <div class="best-meta">10 мин · 15 600 просм.</div>
-            </div>
-          </a>
-          <a href="../obzory/xiaomi-15-pro/" class="best-item">
-            <span class="best-num">4</span>
-            <div class="best-body">
-              <div class="best-tag">Обзор · Смартфоны</div>
-              <div class="best-title">Xiaomi 15 Pro: флагман за 80 000 ₽</div>
-              <div class="best-meta">8 мин · 18 900 просм.</div>
-            </div>
-          </a>
-          <a href="../top/noutbuki-do-80000/" class="best-item">
-            <span class="best-num">5</span>
-            <div class="best-body">
-              <div class="best-tag">Рейтинг · Ноутбуки</div>
-              <div class="best-title">Топ-5 ноутбуков до 80 000 ₽</div>
-              <div class="best-meta">7 мин · 9 800 просм.</div>
-            </div>
-          </a>
+          <a href="../obzory/iphone-16-pro-max/" class="best-item"><span class="best-num n1">1</span><div class="best-body"><div class="best-tag">Обзор · Смартфоны</div><div class="best-title">iPhone 16 Pro Max: зачем платить 110 000 ₽</div><div class="best-meta">8 мин · 12 400 просм.</div></div></a>
+          <a href="../sravnenie/iphone-vs-samsung/" class="best-item"><span class="best-num n2">2</span><div class="best-body"><div class="best-tag">Сравнение</div><div class="best-title">iPhone vs Galaxy S25 Ultra: итог</div><div class="best-meta">10 мин · 21 800 просм.</div></div></a>
+          <a href="../obzory/airpods-pro-3/" class="best-item"><span class="best-num n3">3</span><div class="best-body"><div class="best-tag">Сравнение · Аудио</div><div class="best-title">AirPods Pro 3 vs Sony XM6</div><div class="best-meta">10 мин · 15 600 просм.</div></div></a>
+          <a href="../obzory/xiaomi-15-pro/" class="best-item"><span class="best-num">4</span><div class="best-body"><div class="best-tag">Обзор · Смартфоны</div><div class="best-title">Xiaomi 15 Pro: флагман за 80 000 ₽</div><div class="best-meta">8 мин · 18 900 просм.</div></div></a>
+          <a href="../top/noutbuki-do-80000/" class="best-item"><span class="best-num">5</span><div class="best-body"><div class="best-tag">Рейтинг · Ноутбуки</div><div class="best-title">Топ-5 ноутбуков до 80 000 ₽</div><div class="best-meta">7 мин · 9 800 просм.</div></div></a>
         </div>
       </div>
-
-      <!-- NEWSLETTER -->
       <div class="newsletter-block">
         <h3>Новые обзоры на почту</h3>
         <p>Раз в неделю — лучшие материалы и скидки.</p>
-        <form class="newsletter-form" onsubmit="return false;">
-          <input type="email" placeholder="ваш@email.ru" aria-label="Email">
-          <button type="submit">OK</button>
-        </form>
+        <form class="newsletter-form" onsubmit="return false;"><input type="email" placeholder="ваш@email.ru" aria-label="Email"><button type="submit">OK</button></form>
       </div>
-
-      <!-- TAGS -->
       <div class="sidebar-block">
         <div class="sidebar-title">Темы</div>
         <div class="tags-cloud">
@@ -478,12 +308,9 @@ footer { border-top: 1px solid var(--border); padding: 40px 0 28px; background: 
           <a href="../flagmany/" class="tag-chip">Флагманы</a>
         </div>
       </div>
-
     </aside>
   </div>
 </div>
-
-<!-- FOOTER -->
 <footer>
   <div class="container">
     <div class="footer-grid">
@@ -491,27 +318,9 @@ footer { border-top: 1px solid var(--border); padding: 40px 0 28px; background: 
         <a href="../" class="logo">Tech<span style="color:var(--accent)">Review</span></a>
         <p>Независимые обзоры техники и гаджетов. Тестируем честно — без рекламных бюджетов.</p>
       </div>
-      <div class="footer-col">
-        <h4>Категории</h4>
-        <a href="../smartfony/">Смартфоны</a>
-        <a href="../noutbuki/">Ноутбуки</a>
-        <a href="../televizory/">Телевизоры</a>
-        <a href="../audio/">Аудио</a>
-        <a href="../bytovaya-tehnika/">Техника</a>
-      </div>
-      <div class="footer-col">
-        <h4>Материалы</h4>
-        <a href="../obzory/">Все обзоры</a>
-        <a href="../top/">Рейтинги</a>
-        <a href="../gajdy/">Гайды</a>
-        <a href="../sravnenie/">Сравнения</a>
-      </div>
-      <div class="footer-col">
-        <h4>О сайте</h4>
-        <a href="../o-nas/">О нас</a>
-        <a href="../kontakty/">Контакты</a>
-        <a href="../politika/">Конфиденциальность</a>
-      </div>
+      <div class="footer-col"><h4>Категории</h4><a href="../smartfony/">Смартфоны</a><a href="../noutbuki/">Ноутбуки</a><a href="../televizory/">Телевизоры</a><a href="../audio/">Аудио</a><a href="../bytovaya-tehnika/">Техника</a></div>
+      <div class="footer-col"><h4>Материалы</h4><a href="../obzory/">Все обзоры</a><a href="../top/">Рейтинги</a><a href="../gajdy/">Гайды</a><a href="../sravnenie/">Сравнения</a></div>
+      <div class="footer-col"><h4>О сайте</h4><a href="../o-nas/">О нас</a><a href="../kontakty/">Контакты</a><a href="../politika/">Конфиденциальность</a></div>
     </div>
     <div class="footer-bottom">
       <p>© 2026 TechReview. Все права защищены.</p>
@@ -519,28 +328,18 @@ footer { border-top: 1px solid var(--border); padding: 40px 0 28px; background: 
     </div>
   </div>
 </footer>
-
 <script>
-// NAV TOGGLE
 function toggleNav() {
   const cats = document.querySelector('.nav-cats');
   const open = cats.style.display === 'flex';
   cats.style.display = open ? 'none' : 'flex';
-  if (!open) {
-    Object.assign(cats.style, { flexDirection:'column', position:'absolute', top:'56px', left:'0', right:'0', background:'#fff', borderBottom:'1px solid #e8e8e4', padding:'8px 24px 16px', zIndex:'199' });
-  }
+  if (!open) { Object.assign(cats.style, { flexDirection:'column', position:'absolute', top:'56px', left:'0', right:'0', background:'#fff', borderBottom:'1px solid #e8e8e4', padding:'8px 24px 16px', zIndex:'199' }); }
 }
-
-// FILTER
 function filterArticles(cat, btn) {
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   document.querySelectorAll('#article-list .article-item').forEach(item => {
-    if (cat === 'all' || item.dataset.cat === cat) {
-      item.style.display = 'grid';
-    } else {
-      item.style.display = 'none';
-    }
+    item.style.display = (cat === 'all' || item.dataset.cat === cat) ? 'grid' : 'none';
   });
 }
 </script>
