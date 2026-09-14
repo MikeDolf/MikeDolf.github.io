@@ -1,0 +1,4 @@
+# Claude Code skill tooling (local dev tooling, not site content)
+.agents/
+.claude/
+skills-lock.json
